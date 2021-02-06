@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: #E1F2ED;
+}
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
