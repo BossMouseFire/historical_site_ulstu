@@ -6,16 +6,12 @@ class MainPage extends React.Component {
     return (
       <div>
         <nav className="navbar">
-          <div className="emblem">
-            <img src={emblem}/>
-          </div>
-          <div className="buttonsSelect">
-            <button>ФЛОРА И ФАУНА</button>
-            <button>ИСТОРИЯ</button>
-            <button>ДОСТОПРИМЕЧАТЕЛЬНОСТИ</button>
-            <button>ВИКТОРИНА</button>
-            <button>ИЗВЕСТНЫЕ ЛЮДИ</button>
-          </div>
+          <img className="emblem" src={emblem} alt="герб Ульяновской области"/>
+          <button>ФЛОРА И ФАУНА</button>
+          <button>ИСТОРИЯ</button>
+          <button>ДОСТОПРИМЕЧАТЕЛЬНОСТИ</button>
+          <button>ВИКТОРИНА</button>
+          <button>ИЗВЕСТНЫЕ ЛЮДИ</button>
           <div className="changeLanguage">
             <button>RU</button>
           </div>

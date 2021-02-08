@@ -4,10 +4,10 @@ nav {
     background: #4F686C;
 }
 
-.navbar{
+.navbar {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-around;
 }
 
 .authorsInfo {
@@ -33,26 +33,27 @@ nav {
     margin-left: 2%;
 }
 
-.buttonsSelect{
-    margin-left: 7%;
-}
-.buttonsSelect button {
+
+
+.navbar button {
     font-family: Abhaya Libre ExtraBold;
-    padding:0px 40px;
     height: 54px;
-    color:#FFFFFF;
-    margin:auto;
+    color: #FFFFFF;
+    padding: 0px 40px;
     transition: all 0.2s ease;
 }
-.buttonsSelect button:hover {
+.navbar button:nth-of-type(1){
+    margin-left: 3%;
+}
+
+.navbar button:hover {
     background: #445b5e;
     transition: all 0.5s ease;
 }
-.changeLanguage{
-    margin-left: 8%;
-}
 
-.changeLanguage button{
+
+
+.changeLanguage button {
     font-family: Abhaya Libre ExtraBold;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
