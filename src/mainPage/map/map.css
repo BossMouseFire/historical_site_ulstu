@@ -1,0 +1,98 @@
+.a,
+.b,
+.c,
+.d,
+.e {
+    stroke: #000;
+    stroke-miterlimit: 10;
+}
+
+.a {
+    fill: url(#a);
+}
+
+.b {
+    fill: url(#b);
+}
+
+.c {
+    fill: url(#c);
+}
+
+.d {
+    fill: url(#d);
+}
+
+.e {
+    fill: url(#e);
+}
+
+.f,
+.i,
+.j {
+    fill: none;
+}
+
+.g {
+    mask: url(#f);
+}
+
+< !-- .h {
+    fill: #fefee9;
+    stroke-width: 0.75px;
+}
+
+-->.h,
+.i,
+.m {
+    stroke: #646464;
+}
+
+.i,
+.m {
+    stroke-width: 2px;
+}
+
+.j,
+.k {
+    stroke: #0978ab;
+}
+
+.j {
+    stroke-miterlimit: 3.33;
+    stroke-width: 0.35px;
+}
+
+.k {
+    fill: #c6ecff;
+    stroke-width: 0.5px;
+}
+
+.l {
+    clip-path: url(#g);
+}
+
+.m {
+    fill: #f5f5f5;
+}
+
+.district_ulst path {
+    fill-opacity: 1;
+    fill-rule: nonzero;
+    stroke: #646464;
+    stroke-width: 0.75;
+    stroke-miterlimit: 4;
+    stroke-opacity: 1;
+    stroke-dasharray: none;
+    fill: #fefee9;
+    transition: all, 0s, ease, 0.4s;
+}
+
+.district_ulst path:hover {
+    fill: #e0e0ab;
+    transition: all, 0s, ease, 0.3s;
+}
+.map{
+    margin-left: 5%;
+    width: 43%;
+}
