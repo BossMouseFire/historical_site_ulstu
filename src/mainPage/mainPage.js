@@ -1,6 +1,7 @@
 import React from "react";
 import "./mainPage.css";
 import emblem from '../img/emblem.svg'
+import Map from './map/map'
 class MainPage extends React.Component {
   render() {
     return (
@@ -16,6 +17,7 @@ class MainPage extends React.Component {
             <button>RU</button>
           </div>
         </nav>
+        <Map/>
         <nav className="authorsInfo">
           <p>
             © Сайт создан студентами УлГТУ, Абаниным Данилом, Курмыза Павлом,
