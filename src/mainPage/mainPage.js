@@ -1,25 +1,23 @@
 import React from "react";
 import "./mainPage.css";
 import emblem from '../img/emblem.svg'
+import Map from './map/map'
 class MainPage extends React.Component {
   render() {
     return (
       <div>
         <nav className="navbar">
-          <div className="emblem">
-            <img src={emblem}/>
-          </div>
-          <div className="buttonsSelect">
-            <button>ФЛОРА И ФАУНА</button>
-            <button>ИСТОРИЯ</button>
-            <button>ДОСТОПРИМЕЧАТЕЛЬНОСТИ</button>
-            <button>ВИКТОРИНА</button>
-            <button>ИЗВЕСТНЫЕ ЛЮДИ</button>
-          </div>
+          <img className="emblem" src={emblem} alt="герб Ульяновской области"/>
+          <button>ФЛОРА И ФАУНА</button>
+          <button>ИСТОРИЯ</button>
+          <button>ДОСТОПРИМЕЧАТЕЛЬНОСТИ</button>
+          <button>ВИКТОРИНА</button>
+          <button>ИЗВЕСТНЫЕ ЛЮДИ</button>
           <div className="changeLanguage">
             <button>RU</button>
           </div>
         </nav>
+        <Map/>
         <nav className="authorsInfo">
           <p>
             © Сайт создан студентами УлГТУ, Абаниным Данилом, Курмыза Павлом,
