@@ -1,8 +1,8 @@
 import React from "react";
-import "./mainPage.css";
+import "./App.css";
 import emblem from '../img/emblem.svg'
-import Map from './map/map'
-class MainPage extends React.Component {
+import Map from '../quiz/map/map'
+class App extends React.Component {
   render() {
     return (
       <div>
@@ -13,9 +13,8 @@ class MainPage extends React.Component {
           <button>ДОСТОПРИМЕЧАТЕЛЬНОСТИ</button>
           <button>ВИКТОРИНА</button>
           <button>ИЗВЕСТНЫЕ ЛЮДИ</button>
-          <div className="changeLanguage">
-            <button>RU</button>
-          </div>
+          
+          <button>RU</button>
         </nav>
         <Map/>
         <nav className="authorsInfo">
@@ -28,4 +27,4 @@ class MainPage extends React.Component {
     );
   }
 }
-export default MainPage;
+export default App;
