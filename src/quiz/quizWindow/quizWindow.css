@@ -1,0 +1,9 @@
+.window {
+    position: absolute;
+    background: #7c989c;
+    border-radius: 20px;
+    width: 30%;
+    height: 67%;
+    top: 16%;
+    left: 60%;
+}

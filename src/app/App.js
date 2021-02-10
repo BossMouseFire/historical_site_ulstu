@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import emblem from '../img/emblem.svg'
-import Map from '../quiz/map/map'
+import Quiz from '../quiz/quiz'
 class App extends React.Component {
   render() {
     return (
@@ -11,16 +11,13 @@ class App extends React.Component {
           <button>ФЛОРА И ФАУНА</button>
           <button>ИСТОРИЯ</button>
           <button>ДОСТОПРИМЕЧАТЕЛЬНОСТИ</button>
-          <button>ВИКТОРИНА</button>
+          <button>ИСПЫТАНИЕ</button>
           <button>ИЗВЕСТНЫЕ ЛЮДИ</button>
-          
-          <button>RU</button>
         </nav>
-        <Map/>
+        <Quiz/>
         <nav className="authorsInfo">
           <p>
-            © Сайт создан студентами УлГТУ, Абаниным Данилом, Курмыза Павлом,
-            Ильбековым Дмитрием, 2021 г.
+            © Сайт создан студентами УлГТУ
           </p>
         </nav>
       </div>
