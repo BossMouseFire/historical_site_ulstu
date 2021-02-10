@@ -20,7 +20,7 @@ nav {
     font-family: Abhaya Libre ExtraBold;
     font-style: normal;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 21px;
     color: rgba(255, 255, 255, 0.6);
     text-align: center;
@@ -28,9 +28,7 @@ nav {
 }
 
 .emblem {
-    height: 46px;
-    width: 48px;
-    margin-left: 2%;
+    padding: 3px;
 }
 
 
@@ -42,10 +40,6 @@ nav {
     padding: 0px 40px;
     transition: all 0.2s ease;
 }
-.navbar button:nth-of-type(1){
-    margin-left: 3%;
-}
-
 .navbar button:hover {
     background: #445b5e;
     transition: all 0.5s ease;
