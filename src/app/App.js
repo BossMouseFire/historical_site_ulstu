@@ -1,8 +1,8 @@
 import React from "react";
-import "./mainPage.css";
+import "./App.css";
 import emblem from '../img/emblem.svg'
-import Map from './map/map'
-class MainPage extends React.Component {
+import Quiz from '../quiz/quiz'
+class App extends React.Component {
   render() {
     return (
       <div>
@@ -11,21 +11,17 @@ class MainPage extends React.Component {
           <button>ФЛОРА И ФАУНА</button>
           <button>ИСТОРИЯ</button>
           <button>ДОСТОПРИМЕЧАТЕЛЬНОСТИ</button>
-          <button>ВИКТОРИНА</button>
+          <button>ИСПЫТАНИЕ</button>
           <button>ИЗВЕСТНЫЕ ЛЮДИ</button>
-          <div className="changeLanguage">
-            <button>RU</button>
-          </div>
         </nav>
-        <Map/>
+        <Quiz/>
         <nav className="authorsInfo">
           <p>
-            © Сайт создан студентами УлГТУ, Абаниным Данилом, Курмыза Павлом,
-            Ильбековым Дмитрием, 2021 г.
+            © Сайт создан студентами УлГТУ
           </p>
         </nav>
       </div>
     );
   }
 }
-export default MainPage;
+export default App;
