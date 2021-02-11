@@ -7,3 +7,16 @@
     top: 16%;
     left: 60%;
 }
+.title{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10%;
+}
+
+.defaultTitle{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30%;
+}
