@@ -2786,7 +2786,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Инзенский район')}
               onMouseOut={this.areaHandlerOut}
-              onClick={(event) => this.Test(event, 'Инзенский район')}
+              onClick={() => this.props.updateDistrict('Инзенский район')}
             />
             <path
               class="h"
@@ -2794,6 +2794,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Теренгульский район')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Теренгульский район')}
             />
             <path
               class="h"
@@ -2801,6 +2802,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Цильнинский район‎')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Цильнинский район‎')}
             />
             <path
               class="h"
@@ -2808,6 +2810,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Ульяновская область')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Ульяновская область')}
             />
             <path
               class="h"
@@ -2815,6 +2818,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Сурский район‎')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Сурский район‎')}
             />
             <path
               class="h"
@@ -2822,6 +2826,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Мелекесский район‎')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Мелекесский район‎')}
             />
             <path
               class="h"
@@ -2829,6 +2834,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Майнский район‎')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Майнский район‎')}
             />
             <path
               class="h"
@@ -2836,6 +2842,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Старомайнский район‎')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Старомайнский район‎')}
             />
             <path
               class="h"
@@ -2843,6 +2850,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Новомалыклинский район‎')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Новомалыклинский район‎')}
             />
             <path
               class="h"
@@ -2850,6 +2858,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Новомалыклинский район‎')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Новомалыклинский район‎')}
             />
             <path
               class="h"
@@ -2857,6 +2866,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Дмитровград')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Дмитровград')}
             />
             <path
               class="h"
@@ -2864,6 +2874,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Ульяновск')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Ульяновск')}
             />
             <path
               class="h"
@@ -2871,6 +2882,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Чердаклинский район')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Чердаклинский район')}
             />
             <path
               class="h"
@@ -2878,6 +2890,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Старокулаткинский район‎')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Старокулаткинский район‎')}
             />
             <path
               class="h"
@@ -2885,6 +2898,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Сенгилеевский район‎')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Сенгилеевский район‎‎')}
             />
             <path
               class="h"
@@ -2892,6 +2906,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Радищевский район‎')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Радищевский район')}
             />
             <path
               class="h"
@@ -2899,6 +2914,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Павловский район')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Павловский район')}
             />
             <path
               class="h"
@@ -2906,6 +2922,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Новоспасский район‎')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Новоспасский район‎')}
             />
             <path
               class="h"
@@ -2913,6 +2930,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Николаевский район')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Николаевский район')}
             />
             <path
               class="h"
@@ -2920,6 +2938,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Кузоватовский район‎')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Кузоватовский район‎‎')}
             />
             <path
               class="h"
@@ -2927,6 +2946,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Карсунский район‎')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Карсунский район‎')}
             />
             <path
               class="h"
@@ -2934,6 +2954,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Вешкаймский район‎')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Вешкаймский район‎')}
             />
             <path
               class="h"
@@ -2941,6 +2962,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Барышский район‎')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Барышский район‎')}
             />
             <path
               class="h"
@@ -2948,6 +2970,7 @@ class Map extends React.Component {
               transform="translate(1 1)"
               onMouseEnter={(event) => this.areaHandlerEnter(event, 'Базарносызганский район‎')}
               onMouseOut={this.areaHandlerOut}
+              onClick={() => this.props.updateDistrict('Базарносызганский район‎')}
             />
           </g>
           <g class="l">
