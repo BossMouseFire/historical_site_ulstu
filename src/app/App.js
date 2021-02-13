@@ -11,7 +11,7 @@ class App extends React.Component {
           <button>ФЛОРА И ФАУНА</button>
           <button>ИСТОРИЯ</button>
           <button>ДОСТОПРИМЕЧАТЕЛЬНОСТИ</button>
-          <button>ИСПЫТАНИЕ</button>
+          <button>КАРТА</button>
           <button>ИЗВЕСТНЫЕ ЛЮДИ</button>
         </nav>
         <Quiz/>
