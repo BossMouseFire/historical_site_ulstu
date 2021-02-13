@@ -80,11 +80,16 @@
 }
 
 .map{
-    width: 45%;
-    margin-left: 5%;
-    margin-top: 0.7%; 
+    width: 87%;
+    margin-top: 3%;
+    margin-left: 2%;
 }
-
+.blockMap{
+    position: absolute;
+    height: 90%;
+    width: 50%;
+    background: linear-gradient(270deg, rgba(53, 103, 111, 0.34) 0%, rgba(227, 238, 240, 0) 13.7%);
+}
 .tooltip {
     position: fixed;
     padding: 10px 10px;
@@ -95,3 +100,4 @@
     color: #333;
     background: #ffffff;
 }
+
