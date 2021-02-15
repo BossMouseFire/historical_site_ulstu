@@ -1,5 +1,5 @@
 import React from 'react'
-import './quizWindow.css'
+import './quizWindow.scss'
 import startPage from '../imgQuiz/districts/startImg.jpg'
 import testImg from '../imgQuiz/districts/test.jpg'
 class QuizWindow extends React.Component{
@@ -20,7 +20,6 @@ class QuizWindow extends React.Component{
                 <div className="textWindow">
                     <p>{text}</p>
                 </div>
-                
             </div>
         )
     }

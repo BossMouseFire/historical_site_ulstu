@@ -1,7 +1,6 @@
 import "./map.css";
 import React from 'react'
 class Map extends React.Component {
-
   areaHandlerEnter = (event, district) => {
     let target = event.target;
     // ...создадим элемент для подсказки
@@ -22,8 +21,8 @@ class Map extends React.Component {
 
     tooltipElem.style.left = left + 'px';
     tooltipElem.style.top = top + 'px';
-
-    
+    // console.log('---', this.state.x, left, this.state.y, top);
+    // //console.log(this.state.clientX, this.state.clientY)
   }
 
   areaHandlerOut = (event) => {

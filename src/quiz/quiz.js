@@ -1,7 +1,7 @@
 import React from 'react'
 import Map from '../quiz/map/map'
 import QuizWindow from './quizWindow/quizWindow'
-import './quiz.css'
+import './quiz.scss'
 class Quiz extends React.Component {
     state = {
         district: ''
@@ -14,7 +14,7 @@ class Quiz extends React.Component {
     }
     render (){
         return (
-            <div className="form">
+            <div>
                 <Map updateDistrict={this.updateDistrict}/>
                 <QuizWindow district={this.state.district}/>
             </div>
