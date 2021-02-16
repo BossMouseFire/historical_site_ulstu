@@ -10,7 +10,7 @@ class App extends React.Component {
           <img className="emblem" src={emblem} alt="герб Ульяновской области" />
           <button>ИСТОРИЯ</button>
           <button>ДОСТОПРИМЕЧАТЕЛЬНОСТИ</button>
-          <button>ХРОНОКАРТА</button>
+          <button>КАРТА</button>
           <button>ВЫДАЮЩИЕСЯ ЗЕМЛЯКИ</button>
         </nav>
         <Quiz />
