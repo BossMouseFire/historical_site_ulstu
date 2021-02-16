@@ -2785,17 +2785,17 @@ class Map extends React.Component {
                 this.areaHandlerEnter(event, "Инзенский район")
               }
               onMouseOut={this.areaHandlerOut}
-              onClick={() => this.props.updateDistrict("Инзенский район")}
+              onClick={() => this.props.updateDistrict("inzensky_district")}
             />
             <path
               class="h"
               d="M338.75,322.5l.13-4,1-3.25,3-4.88,2.87-3,.25-2L343.13,304v-1.13l1-.5,2.25.13,1.62-1-1.12-1.5-6.25-5.88,1.12-2,.25-1.87.88-1.75.37-2.38-.75-1L343,282l.88-1.13V279.5l.62-1.75,2.25,1,1.38,1,1.12.12.5-.5.25,1.13,1.38.62,1.62-2,1.5-4.12.75-3,1-1.88,2-2.37,1.5.37,1.63,1.13,2.25,2.12,3-5.75L364,265.5l-.62-.25-.75-2,.25-1.88-.5-1.62,1.12-.88,2.5-.12.5-1.13-1.62-2.37-4-3.25-2.13-1.5,6.25-7.13-3.87-2.5.12-4.25,3.63-1.37,1.37-.25,1.38-1.5.87-1.75,1.63-1.75,1.25-.63,1.37-1.37.63-.88,1.25.13.5-1.75,1.75-.25v-.75h.5v-.75l.75-2.5.62.25-.12,1.75,3,1.12-.25,1.38-1,2.37,2.5,2.63v.87l-1.25,1.75-1.75.38.87,1.62,1.25,1.25,1.63-1,.87-.75v-1.12l3.25-.5L390,234.5l.5-.63v-3.75l1.25.38,2,2.25,1.63.12-1.38,2V238l-1.12-.38,1.12,3,5.25.25,1.25,2.88-1.75-.13.5,2.25h3.25l-.25,3.13-3.25-.25-.75,8.12,12,1.38-.75,3.12,1.88-.25-1.25,5,2.5.88,1,3.75.62.25,1-1.38-.12-1.87,5.37.12,1.25,1.75,2-3.12,2.38,6.5,1.87,2.37.75,7.13-.5,3.75.75,1-.5,1.75-1.37-.38-.5,3.13,1.12,2.25-.25,1.5-3.5.25.5,1.5,1.88,2,.75.5,2.37-.88,1.13,1.38-1.38,1.5.88,1.25h1.37l1,.5-1.75,5.75-.37-.25-.5.25-.63.87-1.75,1.63,1.88,1.37.12.38-.12,1,1,1.12.62,1.13h-1.75V317l.38.25H430l.25.37v1l1.38.13.37-1.38.38-.25,2.12,1.13.75.12.25.5-1,2.63.13.25.25.12.25.38-.13,1-.62.62-.88.13.13,1.25-.25.87v1.38l-.38.87-.5.25-.25.38v.62l1.13,1.63,2,.87v.5l-.38.5.5.75-.37.63-.75.62.25.63,2.87.5.5.37-5,4.5-.62.25-.88-.75-.87-.25-.25,1.13-.75.5-.88.12-1.25-.75-1-1-.12.5-.38.25-1.87.13-.75-.5-.25-.38v-.87l-1.13.25-2.62-.63.37,1.63-.25.25v.62l-.25.38-.37.12-2.25-.75-.13.63.38.5.62.37.5.75.88.13.12.25-.12.25-.38-.13-.25.25.25.38,1.38-.25.12.5-.12,3.12-.38.25h-.37l-.63-1.12-1,.12-.75-1.37-1.12-1,.12-.25.63-.5-.13-.38-.62-.5-.25-1.12-.38-.75h-.37l-.38.62-1.12-.87-.38,1.75-1,.5-2.5-2-.62-1.13-1.5,12.38,1.25,2v.87l-.25.63,2.12.62.5.5,1.13.75,1.75.38.62.37,1.63.25-.25.5.25,3.75,1.62-.62,2.5.25,2.38-.13.12.75.38.5.75.38,1.12-.13.5-1.12.5-.5.38,1.12.25.25H427l-.25.5-.12,1,.12.5.5.13-.75.5-.5.62-.37,1-1-.37v-.5l-.25-.38-3.13-1.75-1-.37v-.5l-.37-.25-.38.12-.25.38-1.37-.5-.25,1.25h-.38v.37l-.87.25-.25.5H417l-.87,3.25-.75-.37-.38-.38h-1v.63L412.88,372l-.88,2.5v.5l.5,1.5-.37,3.75-.38,1.62-.12,3.5.25.75h.75l-.63,2.25-.5.5-.87.5-1.13.13-1,.37-2-.75-.37-.37-.38-.13v.25l-.62.38-.13-.38.13-.12.25.12.37-.5,1-.12.13-.38-.13-.25h-.37L406,388l-.87-.25-1.5,1.87-1.13-1.25-.37-.87-.5-.13-.38.13-.37.37-.5,1.63-1.75,3.25-.38.12-.5-.37-.37-1-.38-.38h-.62l-.5-.25-.63-1.5.25-.5-.62-.12-1.13.87-.75,2h-.37l-.5-.37-.13-.38.25-.37,1.75-1.25.38-1.25-.25-.38h-.5l-.5.63-1-.75.5-1.13-.38-.12-.75.12-.37-.37-.25-1.13-.63-.37-.25-.63h-2.87l-.5.63h-.25l-.38-.63-3,2.5-.5-.5h-.25l-.25.38-.87.62-.25.38.12,1-.25,1.12,1.13.38.12.75-1-.13-1.62-.87-1.38.75-2.12.25-.38-.38v-.5l.63-.5-.13-1.5.5-1.87-1.75-.88-1.87.63-.38.87-.12.75-.5.5-.5-.12V387l-.88-.25-1.62-1-.63-.13-.5.25-2.12,2.38-.63-.13-3.5,1.13-1.12.12-1.5-.25-.63.75-.37,1.13.37.87L356.88,393l.12,2,.5,1,3,.25.38.25.12.37-2.12,3.5-1.5,2.13-.25-.13L355.88,399l-.25.12-1.5-4.37-1.63-3.88-2-1.5,2-4,1.5-1,1.5-1.37-1.25-.63.63-1.62,1.75.12,1.75-4.12.25-4.5,1-1.5,1.12-.63V368.5l-1.25-.38-1.75-1.37.38-1.5-.25-2,.62-1.88.13-1.87-.38-2-.62-1.63,1.25-1.5-.25-2.12v-6.13l1.12-.25.13-2.5-.25-1.25-2.63.13-1.12-1.38-1.63-.62-4.5,2.12-.25,1.88-1,.87L344.75,338l-2-2.88-2.5-5.5-1.5-7.12"
               transform="translate(1 1)"
               onMouseEnter={(event) =>
-                this.areaHandlerEnter(event, "Тереньгульский район")
+                this.areaHandlerEnter(event, "Теренгульский район")
               }
               onMouseOut={this.areaHandlerOut}
-              onClick={() => this.props.updateDistrict("Тереньгульский район")}
+              onClick={() => this.props.updateDistrict("terengulsky_district")}
             />
             <path
               class="h"
@@ -2805,7 +2805,7 @@ class Map extends React.Component {
                 this.areaHandlerEnter(event, "Цильнинский район‎")
               }
               onMouseOut={this.areaHandlerOut}
-              onClick={() => this.props.updateDistrict("Цильнинский район‎")}
+              onClick={() => this.props.updateDistrict("tsilninskiy_district")}
             />
             <path
               class="h"
@@ -2815,7 +2815,7 @@ class Map extends React.Component {
                 this.areaHandlerEnter(event, "Ульяновский район")
               }
               onMouseOut={this.areaHandlerOut}
-              onClick={() => this.props.updateDistrict("Ульяновский район")}
+              onClick={() => this.props.updateDistrict("ulyanovsk_district")}
             />
             <path
               class="h"
@@ -2825,7 +2825,7 @@ class Map extends React.Component {
                 this.areaHandlerEnter(event, "Сурский район‎")
               }
               onMouseOut={this.areaHandlerOut}
-              onClick={() => this.props.updateDistrict("Сурский район‎")}
+              onClick={() => this.props.updateDistrict("sursky_district")}
             />
             <path
               class="h"
@@ -2835,7 +2835,7 @@ class Map extends React.Component {
                 this.areaHandlerEnter(event, "Мелекесский район‎")
               }
               onMouseOut={this.areaHandlerOut}
-              onClick={() => this.props.updateDistrict("Мелекесский район‎")}
+              onClick={() => this.props.updateDistrict("melekessky_district")}
             />
             <path
               class="h"
@@ -2845,7 +2845,7 @@ class Map extends React.Component {
                 this.areaHandlerEnter(event, "Майнский район‎")
               }
               onMouseOut={this.areaHandlerOut}
-              onClick={() => this.props.updateDistrict("Майнский район‎")}
+              onClick={() => this.props.updateDistrict("mainsky_district")}
             />
             <path
               class="h"
@@ -2855,7 +2855,7 @@ class Map extends React.Component {
                 this.areaHandlerEnter(event, "Старомайнский район‎")
               }
               onMouseOut={this.areaHandlerOut}
-              onClick={() => this.props.updateDistrict("Старомайнский район‎")}
+              onClick={() => this.props.updateDistrict("staromainsky_district")}
             />
             <path
               class="h"
@@ -2866,7 +2866,7 @@ class Map extends React.Component {
               }
               onMouseOut={this.areaHandlerOut}
               onClick={() =>
-                this.props.updateDistrict("Новомалыклинский район‎")
+                this.props.updateDistrict("novomalyklinsky_district")
               }
             />
             <path
@@ -2878,7 +2878,7 @@ class Map extends React.Component {
               }
               onMouseOut={this.areaHandlerOut}
               onClick={() =>
-                this.props.updateDistrict("Новомалыклинский район‎")
+                this.props.updateDistrict("novomalyklinsky_district")
               }
             />
             <path
@@ -2886,10 +2886,10 @@ class Map extends React.Component {
               d="M582.25,204.5l1.38-8.5,1.37-.13.25-2.62,2.25.5.75-2.38h2.63l.12-3.5,2.63.63v-2.13l-1.88-.87.5-1.88,3.25.5-.25-3,3.88.13.37-3.75-1.12-3.63L597.25,172,596,170.75l.5-1.13,2-.75.75-.87,1.88-1.5,4.12.62L604,173.25l.63,4,6.75.87-.63,6.25,2.63.25,1.25,2.88,1.75.75,2-1.63,1.62,2-.87,1.13-.75,1.37-.38,6.5L614.88,200l-.38-2.75-2.37,1.25-.88-.5.5-2.13-1.62-.25-2.38-2.25-2.5,1.5-2,1.63-1.12,2.25-2.13.62-1.87.25-.5,2.13H593l-1.75,2.12h-2.62L584.75,207l-2.5-2.5"
               transform="translate(1 1)"
               onMouseEnter={(event) =>
-                this.areaHandlerEnter(event, "Мелекесский район")
+                this.areaHandlerEnter(event, "Димитровград")
               }
               onMouseOut={this.areaHandlerOut}
-              onClick={() => this.props.updateDistrict("Мелекесский район")}
+              onClick={() => this.props.updateDistrict("dimitrovgrad")}
             />
             <path
               class="h"
@@ -2899,7 +2899,7 @@ class Map extends React.Component {
                 this.areaHandlerEnter(event, "Ульяновск")
               }
               onMouseOut={this.areaHandlerOut}
-              onClick={() => this.props.updateDistrict("Ульяновск")}
+              onClick={() => this.props.updateDistrict("ulyanovsk")}
             />
             <path
               class="h"
@@ -2909,7 +2909,9 @@ class Map extends React.Component {
                 this.areaHandlerEnter(event, "Чердаклинский район")
               }
               onMouseOut={this.areaHandlerOut}
-              onClick={() => this.props.updateDistrict("Чердаклинский район")}
+              onClick={() =>
+                this.props.updateDistrict("cherdaklinsky_district")
+              }
             />
             <path
               class="h"
@@ -2920,7 +2922,7 @@ class Map extends React.Component {
               }
               onMouseOut={this.areaHandlerOut}
               onClick={() =>
-                this.props.updateDistrict("Старокулаткинский район‎")
+                this.props.updateDistrict("starokulatkinsky_district")
               }
             />
             <path
@@ -2931,17 +2933,19 @@ class Map extends React.Component {
                 this.areaHandlerEnter(event, "Сенгилеевский район‎")
               }
               onMouseOut={this.areaHandlerOut}
-              onClick={() => this.props.updateDistrict("Сенгилеевский район‎‎")}
+              onClick={() => this.props.updateDistrict("sengileevsky_district")}
             />
             <path
               class="h"
               d="M261.75,509.12l1.13-1.25.25-2,1.37.63.25-2.13,1.13-.75,2.12.63,1.88.12,2.62-.5,2.5.88,1,1,.75,1.87,1.13,2,3.87,1.25,2.75.25,1.5,1,1,1.38.38,1.87,1.75,1.63.12,1.25,1.38.62,1-.5-.25-7.37.87-.5.5-4.75-1.37-.25,1.37-7.63,3.88.63.37,3.75-.37.87.37,1,13.88,1.63,4.62,1-.5-2.25-.75.12-2.25-4,1.38-.75,1.5-2,1.12,1.75.75-.87,1.25,1.87,2.25,1.38.88.75.75,1,1.25,1,.75,1.12.5,2.38,1,1.5.87-.13,2.25.13.75-.63,1.75-.62,1.88-1.25-.25-7.75,5,.37,3-.12,1.12,1.25,2.25.62,6.88.13,1.5-.13.37.38-.25.62-.62.63,1.75,1.37,2.25,2.75,1.87-1.37h.63l1.87.75,2,1.5.88,1.12-.38.5-1.25,1-.37.63.75,1.62.75-.37,1,.12.62.75.38-.75.62-3.12,1.5-1.75,1.88-1,1.75-.63,1.25,1.5.87.13,4-1.75,1-.75.5-.63,3.25,3,.13-.75,1.12-1.62.25-1h.5l.5.37-.5,1.25,2.5,1.38-1.37,5.87,4.62,1,3.88-16.25,12.37-.87-1,1.87,5.88,1.25,1.12.63-.25,1.75-2.37,5.62-.75,1.25-.38,1.13-.37,3.12-.38.88-.37.25h-.75l-.5.25L405,516.5l3,1.62.5-1.25,1.63-.12,1,.87,1.12.13-.5,1.62-1.5,1.88-.37,1-.25,1.62.37,2.75.5.5,7.5-2.87,5.13-1.25.62,1.25,1,4.25,4.38,1.37,3.62,1.75,1.88-2.87.75-.25,1,.75,6.37,8.5,2.13,2.37,1.37,2.13.63,1.5.62,2.87L447,549l-1.5,3.12-4.37,3.75-6.38,3.63-.5.5-1.62,1-5,1.37-1.13-.12-1.12.37L424,563.75l-1.37.62-1.25,1.13-1.25-1.25-1.25,1.5-2.5-.75-2.13.37-2,1.5-1.5,2.13-.25,1.87-.25.25-.87.13-1.25,1.62-.88.13-1.62-.13-1.38.5-2.25,1.5-1-1.12-.37-1.63-.88-1-.75-.62-1.12.12-.63-.75.25-.37-1.5-2.88-.75-.5-1.12.13-4.25-.38-.25.63.25,2.12-2,.75-2.38,4.25v1.25l-1.12,2.88-12.75-7-1.38.5-.62.75-2.25-.88-1.13,2.13-.5-.25L364,576.37l.13.63,1.37.25-.37,1-6.5-4.5-5.13-2-2.25-1.13L347,567.37l-1.5-.12-1.87.5-1,1.25-3.75,2-1.75,1.5-1.88,1H333.5l-2.62.37-1.25,1.75-3.25,1.13-2.13,3.12-.87.13-1.75-.13-1.88.38-1.62.75-1.25.87-3.63-2.37-1.5.87-3-.87.75-1.5-4-5.88-3.12.25-.63-.37h-1.37v-1.63l1.12-.62v-.63L298.88,568l-1.38-1.25-1.25-.13-.37-1.87-2.38-1.5-4.12-3.63,3.12-5.75,3-1,.5-1,3.5-4.25,2.88-.62,2.87-1.13.63-3.25L301,527.87l-1.5.38-2.5-2.38-4,.13-.12,3.62-3.38,1-3.25.13L283,528.87l1-4.25v-2h-.75l-.87.88-2.25-2.63.12-.75,1.63-2-.13-1.37-.5-.88-.87-2.5-1.63-.87-.12.87.87,1.13.5,2.37-1.25.75-1.62-4.25v-2.25l-.88-.12-.37-1-.88.37.63,1.5v1.5l-3.5.5-.88-1.62.38-.88.5-.25-.25-.62-.63-.63-.37-1.37-5.25,1.87-1.25-.25-1.5.5-1-.37-.13-1.13"
               transform="translate(1 1)"
               onMouseEnter={(event) =>
-                this.areaHandlerEnter(event, "Радищевский район‎")
+                this.areaHandlerEnter(event, "Радищевский район")
               }
               onMouseOut={this.areaHandlerOut}
-              onClick={() => this.props.updateDistrict("Радищевский район")}
+              onClick={() =>
+                this.props.updateDistrict("radishchevsky_district")
+              }
             />
             <path
               class="h"
@@ -2951,7 +2955,7 @@ class Map extends React.Component {
                 this.areaHandlerEnter(event, "Павловский район")
               }
               onMouseOut={this.areaHandlerOut}
-              onClick={() => this.props.updateDistrict("Павловский район")}
+              onClick={() => this.props.updateDistrict("pavlovsky_district")}
             />
             <path
               class="h"
@@ -2961,7 +2965,7 @@ class Map extends React.Component {
                 this.areaHandlerEnter(event, "Новоспасский район‎")
               }
               onMouseOut={this.areaHandlerOut}
-              onClick={() => this.props.updateDistrict("Новоспасский район‎")}
+              onClick={() => this.props.updateDistrict("novospassky_district")}
             />
             <path
               class="h"
@@ -2971,7 +2975,7 @@ class Map extends React.Component {
                 this.areaHandlerEnter(event, "Николаевский район")
               }
               onMouseOut={this.areaHandlerOut}
-              onClick={() => this.props.updateDistrict("Николаевский район")}
+              onClick={() => this.props.updateDistrict("nikolaevsky_district")}
             />
             <path
               class="h"
@@ -2981,7 +2985,7 @@ class Map extends React.Component {
                 this.areaHandlerEnter(event, "Кузоватовский район‎")
               }
               onMouseOut={this.areaHandlerOut}
-              onClick={() => this.props.updateDistrict("Кузоватовский район‎‎")}
+              onClick={() => this.props.updateDistrict("kuzovatovsky_district")}
             />
             <path
               class="h"
@@ -2991,7 +2995,7 @@ class Map extends React.Component {
                 this.areaHandlerEnter(event, "Карсунский район‎")
               }
               onMouseOut={this.areaHandlerOut}
-              onClick={() => this.props.updateDistrict("Карсунский район‎")}
+              onClick={() => this.props.updateDistrict("karsun_district")}
             />
             <path
               class="h"
@@ -3001,7 +3005,7 @@ class Map extends React.Component {
                 this.areaHandlerEnter(event, "Вешкаймский район‎")
               }
               onMouseOut={this.areaHandlerOut}
-              onClick={() => this.props.updateDistrict("Вешкаймский район‎")}
+              onClick={() => this.props.updateDistrict("veshkaimsky_district")}
             />
             <path
               class="h"
@@ -3011,7 +3015,7 @@ class Map extends React.Component {
                 this.areaHandlerEnter(event, "Барышский район‎")
               }
               onMouseOut={this.areaHandlerOut}
-              onClick={() => this.props.updateDistrict("Барышский район‎")}
+              onClick={() => this.props.updateDistrict("baryshsky_district")}
             />
             <path
               class="h"
@@ -3022,7 +3026,7 @@ class Map extends React.Component {
               }
               onMouseOut={this.areaHandlerOut}
               onClick={() =>
-                this.props.updateDistrict("Базарносызганский район‎")
+                this.props.updateDistrict("bazarnosyzgansky_district")
               }
             />
           </g>

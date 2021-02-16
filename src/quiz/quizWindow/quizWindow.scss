@@ -1,25 +1,19 @@
+img{
+    transform: translatez(0);
+}
 .window {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     width: 50%;
     margin-left: 50%;
     font-family: Abhaya Libre ExtraBold;
-
+    //Дефолтное окно
     .titleDefault{
         color: #133e45;
         text-align: center;
         font-size: 2vw;
         margin-top: 2%;
-    }
-    .title{
-        color: #133e45;
-        text-align: center;
-        font-size: 2vw;
-        margin-top: 5%;
-    }
-    img{
-        transform: translatez(0);
+        line-height: 2.5vw;
     }
     .imgDefaultWindow {
         margin: auto;
@@ -27,14 +21,7 @@
         margin-top: 2%;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
-    .imgWindow {
-        margin: auto;
-        width: 85%;
-        margin-top: 5%;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        /* border: 2px inset black; */
-    }
-    .textWindow{
+    .textDefaultWindow{
         font-weight: normal;
         font-size: 1.3vw;
         line-height: 1.7vw;
@@ -42,5 +29,47 @@
         text-align: center;
         margin-top: 2.5%;
         padding: 0 2%;
+    }
+
+    // Окно с регионами
+
+    .title{
+        color: #133e45;
+        text-align: center;
+        font-size: 2vw;
+        margin-top: 2%;
+    }
+    .imgWindow {
+        float: left;
+        width: 45%;
+        margin: 0.5% 2% 0 2%;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        /* border: 2px inset black; */
+    }
+    .textWindow{
+        font-weight: normal;
+        font-size: 1.1vw;
+        line-height: 1.7vw;
+        color: #164A52;
+        padding: 0 2%;
+    }
+    .imgBlock{
+        margin-top: 1%;
+    }
+    .buttonBlock{
+        margin-top: 1.7%;
+        margin-left: 35%;
+        width: 35%;
+        text-align: center;
+        background-color: #426166;
+        font-size: 1.5vw;
+        color: white;
+        border-radius: 5px;
+        transition: background-color 0.5s ease 0s;
+            
+        &:hover{
+            background-color: #355257;
+            transition: all 0.5s ease 0s;
+        }
     }
 }
