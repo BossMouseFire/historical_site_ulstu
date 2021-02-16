@@ -11,7 +11,7 @@ class Quiz extends React.Component {
     updateDistrict = (value) => {
         this.setState({
             district: value
-        }, () => console.log(this.state.district))
+        })
     }
     render (){
         return (

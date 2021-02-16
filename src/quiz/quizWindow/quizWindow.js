@@ -9,7 +9,7 @@ class QuizWindow extends React.Component{
         window.open(url);
     }
     render(){
-        const district = this.props.district;
+        const district = districts[this.props.district]['district'];
         const imgDistrict = districts[this.props.district]['imgPath'];
         const text = districts[this.props.district]['districtDescription'];
         return (
