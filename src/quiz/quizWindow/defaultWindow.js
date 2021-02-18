@@ -9,9 +9,7 @@ class DefaultWindow extends React.Component {
     const text =
       "Ульяновская область включает в себя 21 район: Базарносызганский, Барышский, Вешкаймский, Инзенский, Карсунский, Кузоватовский, Майнский, Мелекесский, Николаевский, Новомалыклинский, Новоспасский, Павловский, Радищевский, Сенгилеевский, Старокулаткинский, Старомайнский, Сурский, Тереньгульский, Ульяновский, Цильнинский и Чердаклинский районы.";
     return (
-      <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
-        {(props) => (
-          <div className="window" style={props}>
+          <div className="window" style={this.props.test}>
             <div className="titleDefault">
               <p>{district}</p>
             </div>
@@ -22,8 +20,6 @@ class DefaultWindow extends React.Component {
               <p>{text}</p>
             </div>
           </div>
-        )}
-      </Spring>
     );
   }
 }
