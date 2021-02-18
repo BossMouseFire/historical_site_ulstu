@@ -6,6 +6,7 @@ img{
     flex-direction: column;
     width: 50%;
     margin-left: 50%;
+    position: absolute; 
     font-family: Abhaya Libre ExtraBold;
     //Дефолтное окно
     .titleDefault{
@@ -44,7 +45,6 @@ img{
         width: 45%;
         margin: 0.5% 2% 0 2%;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        /* border: 2px inset black; */
     }
     .textWindow{
         font-weight: normal;
