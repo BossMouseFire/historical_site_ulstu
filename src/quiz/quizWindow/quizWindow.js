@@ -1,5 +1,6 @@
 import React from "react";
 import "./quizWindow.scss";
+import { Transition } from "react-spring/renderprops";
 
 import districts from "./districtsInfo.json";
 class QuizWindow extends React.Component {
@@ -11,24 +12,17 @@ class QuizWindow extends React.Component {
     const district = districts[this.props.district]["district"];
     const imgDistrict = districts[this.props.district]["imgPath"];
     const text = districts[this.props.district]["districtDescription"];
+    const items = [1, 2, 3, 4];
     return (
-      <div className="window">
-        <div className="title">
-          <p>{district}</p>
-        </div>
-        <div className="imgBlock">
-          <img
-            src={"/images/" + imgDistrict}
-            alt="фото региона"
-            className="imgWindow"
-          />
-          <p className="textWindow">{text}</p>
-        </div>
-
-        <button className="buttonBlock" onClick={this.aboutDistrict}>
-          Узнать подробнее
-        </button>
-      </div>
+      <Transition
+        items={items}
+        keys={(item) => item.key}
+        from={{ transform: "translate3d(0,-40px,0)" }}
+        enter={{ transform: "translate3d(0,0px,0)" }}
+        leave={{ transform: "translate3d(0,-40px,0)" }}
+      >
+        {(item) => (props) => <div style={props}>{item.text}</div>}
+      </Transition>
     );
   }
 }
