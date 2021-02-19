@@ -19,7 +19,7 @@ class QuizWindow extends React.Component {
             from={{
               transform: "translate3d(0, 0%,0)",
               opacity: 1,
-              height: "100%",
+              height: "30%",
             }}
             to={{
               transform: "translate3d(0, 100%,0)",
@@ -36,7 +36,7 @@ class QuizWindow extends React.Component {
                 </div>
                 <div className="imgBlock">
                   <img
-                    src={"/images/" + districts[this.props.pastDistrict]["imgPath"]}
+                    src={"/images/districts/" + districts[this.props.pastDistrict]["imgPath"]}
                     alt="фото региона"
                     className="imgWindow"
                   />
@@ -63,7 +63,7 @@ class QuizWindow extends React.Component {
               </div>
               <div className="imgBlock">
                 <img
-                  src={"/images/" + imgDistrict}
+                  src={"/images/districts/" + imgDistrict}
                   alt="фото региона"
                   className="imgWindow"
                 />
