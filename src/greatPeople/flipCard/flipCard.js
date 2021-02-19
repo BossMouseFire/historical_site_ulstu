@@ -4,7 +4,7 @@ class FlipCard extends React.Component {
   aboutHuman = () => {
     let url = this.props.url;
     window.open(url);
-  }
+  };
   render() {
     return (
       <div class="flip-card" style={this.props.test}>
