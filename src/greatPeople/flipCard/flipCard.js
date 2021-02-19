@@ -8,16 +8,12 @@ class FlipCard extends React.Component {
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img
-                src={goncharov}
-                alt="Avatar"
-              />
+              <img src={goncharov} alt="Avatar" />
               <p>Иван Александрович Гончаров</p>
             </div>
             <div class="flip-card-back">
-              <h1>John Doe</h1>
-              <p>Architect & Engineer</p>
-              <p>We love that guy</p>
+              <h1>Иван Александрович Гончаров</h1>
+              <p>ПЕЗДЕЦТУТТЕКСТАПЕЗДЕЦТУТТЕКСТАПЕЗДЕЦТУТТЕКСТА</p>
             </div>
           </div>
         </div>
