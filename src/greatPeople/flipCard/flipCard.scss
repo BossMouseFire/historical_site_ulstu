@@ -5,7 +5,6 @@ img {
   background-color: transparent;
   perspective: 1000px;
   position: absolute;
-
   /* This container is needed to position the front and back side */
   .flip-card-inner {
     position: relative;
@@ -33,7 +32,6 @@ img {
       p {
         color: white;
         font-family: Abhaya Libre ExtraBold;
-        font-size: 1.4vw;
         margin-top: 3%;
       }
     }
