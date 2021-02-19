@@ -1,20 +1,23 @@
 import React from "react";
-import goncharov from "./goncharov.jpg";
 import "./flipCard.scss";
 class FlipCard extends React.Component {
+  aboutHuman = () => {
+    let url = this.props.url;
+    window.open(url);
+  };
   render() {
     return (
-      <div class="wrap">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src={goncharov} alt="Avatar" />
-              <p>Иван Александрович Гончаров</p>
-            </div>
-            <div class="flip-card-back">
-              <h1>Иван Александрович Гончаров</h1>
-              <p>ПЕЗДЕЦТУТТЕКСТАПЕЗДЕЦТУТТЕКСТАПЕЗДЕЦТУТТЕКСТА</p>
-            </div>
+      <div class="flip-card" style={this.props.test}>
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src={"/images/greatPeople/" + this.props.img} alt="Avatar" />
+            <p>{this.props.text}</p>
+          </div>
+          <div class="flip-card-back">
+            <p>{this.props.biography}</p>
+            <button className="buttonCard" onClick={this.aboutHuman}>
+              Узнать подробнее
+            </button>
           </div>
         </div>
       </div>

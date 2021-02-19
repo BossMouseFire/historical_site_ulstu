@@ -1,66 +1,83 @@
-
+img {
+  transform: translatez(0);
+}
 .flip-card {
-    background-color: transparent;
-    position: absolute;
-    perspective: 1000px;
-    width: 28%;
-    height: 68%; /* Remove this if you don't want the 3D effect */
-    margin-top: 5%;
-    margin-left: 35%;
-  
-    /* This container is needed to position the front and back side */
-    .flip-card-inner {
+  background-color: transparent;
+  perspective: 1000px;
+  position: absolute;
+
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 1s;
+    transform-style: preserve-3d;
+
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+      border-radius: 10px;
       position: relative;
+      background-color: #4f686c;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      img {
+        width: 80%;
+        transform: translatez(0);
+        border-radius: 10px;
+      }
+      p {
+        color: white;
+        font-family: Abhaya Libre ExtraBold;
+        font-size: 1.4vw;
+        margin-top: 3%;
+      }
+    }
+    /* Style the back side */
+    .flip-card-back {
+      border-radius: 10px;
+      background-color: #4f686c;
+      color: white;
+      transform: rotateY(180deg);
+      p {
+        font-family: Abhaya Libre ExtraBold;
+        padding: 15px;
+        font-size: 1.1vw;
+      }
+      .buttonCard {
+        margin-top: 2%;
+        width: 80%;
+        text-align: center;
+        background-color: #3d5559;
+        font-size: 1.5vw;
+        color: white;
+        border-radius: 5px;
+        transition: background-color 0.5s ease 0s;
+        font-family: Abhaya Libre ExtraBold;
+
+        &:hover {
+          background-color: #355257;
+          transition: all 0.5s ease 0s;
+        }
+      }
+    }
+
+    /* Position the front and back side */
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
       width: 100%;
       height: 100%;
-      text-align: center;
-      transition: 1s;
-      transform-style: preserve-3d;
-      
-  
-      &
-      /* Style the front side (fallback if image is missing) */
-      .flip-card-front {
-        border-radius: 10px;
-        position: relative;
-        background-color: #4F686C;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        img{
-          width: 80%;
-          transform: translatez(0);
-          border-radius: 10px;
-        }
-        p{
-          color: white;
-          font-family: Abhaya Libre ExtraBold;
-          font-size: 1.5vw;
-          margin-top: 3%;
-        }
-      }
-      /* Style the back side */
-      .flip-card-back {
-        border-radius: 10px;
-        background-color: #4F686C;
-        color: white;
-        transform: rotateY(180deg);
-      }
-  
-      /* Position the front and back side */
-      .flip-card-front,
-      .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden; /* Safari */
-        backface-visibility: hidden;
-      }
-    }
-    /* Do an horizontal flip when you move the mouse over the flip box container */
-    &:hover .flip-card-inner {
-      transform: rotateY(180deg);
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
     }
   }
-  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  &:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+}
