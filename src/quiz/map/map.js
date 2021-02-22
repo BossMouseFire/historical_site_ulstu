@@ -2909,7 +2909,9 @@ class Map extends React.Component {
                 this.areaHandlerEnter(event, "Чердаклинский район")
               }
               onMouseOut={this.areaHandlerOut}
-              onClick={() => this.props.updateDistrict("cherdaklinsky_district")}
+              onClick={() =>
+                this.props.updateDistrict("cherdaklinsky_district")
+              }
             />
             <path
               class="h"
@@ -2941,7 +2943,9 @@ class Map extends React.Component {
                 this.areaHandlerEnter(event, "Радищевский район")
               }
               onMouseOut={this.areaHandlerOut}
-              onClick={() => this.props.updateDistrict("radishchevsky_district")}
+              onClick={() =>
+                this.props.updateDistrict("radishchevsky_district")
+              }
             />
             <path
               class="h"
