@@ -29,7 +29,11 @@ class Quiz extends React.Component {
             pastDistrict={this.state.pastDistrict}
           />
         ) : (
-          <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
+          <Spring
+            from={{ opacity: 0 }}
+            to={{ opacity: 1 }}
+            config={{ duration: 1000 }}
+          >
             {(props) => <DefaultWindow style={props} />}
           </Spring>
         )}
