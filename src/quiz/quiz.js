@@ -3,6 +3,7 @@ import Map from "../quiz/map/map";
 import QuizWindow from "./quizWindow/quizWindow";
 import DefaultWindow from "./quizWindow/defaultWindow";
 import "./quiz.scss";
+import { Spring } from "react-spring/renderprops";
 
 class Quiz extends React.Component {
   state = {
@@ -11,7 +12,7 @@ class Quiz extends React.Component {
   };
 
   updateDistrict = (value) => {
-    if (value !== this.state.district){
+    if (value !== this.state.district) {
       this.setState({
         pastDistrict: this.state.district,
         district: value,
@@ -23,13 +24,18 @@ class Quiz extends React.Component {
       <div>
         <Map updateDistrict={this.updateDistrict} />
         {this.state.district ? (
-          
           <QuizWindow
             district={this.state.district}
             pastDistrict={this.state.pastDistrict}
           />
         ) : (
-          <DefaultWindow />
+          <Spring
+            from={{ opacity: 0 }}
+            to={{ opacity: 1 }}
+            config={{ duration: 1000 }}
+          >
+            {(props) => <DefaultWindow style={props} />}
+          </Spring>
         )}
       </div>
     );

@@ -7,11 +7,11 @@ class FlipCard extends React.Component {
   };
   render() {
     return (
-      <div class="flip-card" style={this.props.test}>
+      <div class="flip-card" style={this.props.style}>
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src={"/images/greatPeople/" + this.props.img} alt="Avatar" />
-            <p>{this.props.text}</p>
+            <p style={this.props.p_style}>{this.props.text}</p>
           </div>
           <div class="flip-card-back">
             <p>{this.props.biography}</p>

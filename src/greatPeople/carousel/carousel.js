@@ -8,7 +8,7 @@ class Carousel extends React.Component {
         {this.props.slide === undefined ? (
           <div>
             <FlipCard
-              test={{
+              style={{
                 marginTop: "5%",
                 marginLeft: "13%",
                 width: "18%",
@@ -17,11 +17,12 @@ class Carousel extends React.Component {
                 zIndex: -2,
                 opacity: 0.8,
               }}
+              p_style={{ fontSize: "0.9vw" }}
               text={this.props.name3}
               img={this.props.path3}
             />
             <FlipCard
-              test={{
+              style={{
                 marginTop: "1.5%",
                 marginLeft: "37%",
                 width: "24%",
@@ -33,9 +34,10 @@ class Carousel extends React.Component {
               img={this.props.path2}
               biography={this.props.biography2}
               url={this.props.url2}
+              p_style={{ fontSize: "1.3vw" }}
             />
             <FlipCard
-              test={{
+              style={{
                 marginTop: "5%",
                 marginLeft: "67%",
                 width: "18%",
@@ -46,6 +48,7 @@ class Carousel extends React.Component {
               }}
               text={this.props.name1}
               img={this.props.path1}
+              p_style={{ fontSize: "0.9vw" }}
             />
           </div>
         ) : this.props.slide === "next" ? (
@@ -74,7 +77,8 @@ class Carousel extends React.Component {
             >
               {(props) => (
                 <FlipCard
-                  test={props}
+                  style={props}
+                  p_style={{ fontSize: "1.3vw" }}
                   text={this.props.name2}
                   img={this.props.path2}
                   biography={this.props.biography2}
@@ -106,7 +110,8 @@ class Carousel extends React.Component {
             >
               {(props) => (
                 <FlipCard
-                  test={props}
+                  style={props}
+                  p_style={{ fontSize: "0.9vw" }}
                   text={this.props.name1}
                   img={this.props.path1}
                 />
@@ -137,7 +142,8 @@ class Carousel extends React.Component {
             >
               {(props) => (
                 <FlipCard
-                  test={props}
+                  style={props}
+                  p_style={{ fontSize: "0.9vw" }}
                   text={this.props.name3}
                   img={this.props.path3}
                 />
@@ -170,7 +176,10 @@ class Carousel extends React.Component {
             >
               {(props) => (
                 <FlipCard
-                  test={props}
+                  style={props}
+                  p_style={{
+                    fontSize: "0.9vw",
+                  }}
                   text={this.props.name1}
                   img={this.props.path1}
                 />
@@ -200,7 +209,10 @@ class Carousel extends React.Component {
             >
               {(props) => (
                 <FlipCard
-                  test={props}
+                  style={props}
+                  p_style={{
+                    fontSize: "0.9vw",
+                  }}
                   text={this.props.name3}
                   img={this.props.path3}
                 />
@@ -231,7 +243,10 @@ class Carousel extends React.Component {
             >
               {(props) => (
                 <FlipCard
-                  test={props}
+                  style={props}
+                  p_style={{
+                    fontSize: "1.3vw",
+                  }}
                   text={this.props.name2}
                   img={this.props.path2}
                   biography={this.props.biography2}
