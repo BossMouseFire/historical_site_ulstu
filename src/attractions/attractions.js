@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "./attractions.scss";
-import test from "./test7.jpg";
-import downArrow from "./down_icon1.svg";
+
+import AttractionBlock from "./attractionBlock/attractionBlock";
+
 class Attractions extends Component {
   render() {
     return (
@@ -9,7 +10,7 @@ class Attractions extends Component {
         <div
           className="generalInformation"
           style={{
-            background: `url(${test})`,
+            background: `url('/images/attractions/background.jpg')`,
             backgroundSize: "cover",
             backgroundAttachment: "fixed",
             backgroundPositionY: "50%",
@@ -29,18 +30,11 @@ class Attractions extends Component {
             этом сайте. Предлагаем Вам отправиться в путешествие по самым
             известным городским местам.
           </p>
-          <img className="arrowDown" src={downArrow} alt="стрелка вниз" />
+          <div class="arrowDown">
+            <img src={"/images/other/arrowDown.svg"} alt="стрелка вниз" />
+          </div>
         </div>
-        <div
-          style={{
-            backgroundColor: "red",
-            width: "100px",
-            height: "100px",
-            marginTop: "50%",
-          }}
-        >
-          fdfdfd
-        </div>
+        <AttractionBlock />
       </div>
     );
   }

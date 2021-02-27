@@ -4,6 +4,7 @@ import emblem from "../img/emblem.svg";
 import Quiz from "../quiz/quiz";
 import GreatPeople from "../greatPeople/greatPeople";
 import Attractions from "../attractions/attractions";
+
 class App extends React.Component {
   state = {
     history: false,
