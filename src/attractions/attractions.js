@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./attractions.scss";
-
+import { attractions } from "./attractions.json";
 import AttractionBlock from "./attractionBlock/attractionBlock";
 
 class Attractions extends Component {
@@ -34,7 +34,18 @@ class Attractions extends Component {
             <img src={"/images/other/arrowDown.svg"} alt="стрелка вниз" />
           </div>
         </div>
-        <AttractionBlock />
+
+        {attractions.map((attraction, key) => (
+          <AttractionBlock
+            title={attraction.title}
+            imagesPaths={attraction.imagesPaths}
+            imagesDescriptions={attraction.imagesDescriptions}
+            mainPart1={attraction.topParagraph}
+            mainPart2={attraction.bottomParagraph}
+            url={attraction.url}
+            style={key === 0 ? { marginTop: "48%" } : {}}
+          />
+        ))}
       </div>
     );
   }
