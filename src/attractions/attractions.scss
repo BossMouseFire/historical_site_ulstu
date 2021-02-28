@@ -1,0 +1,54 @@
+.generalInformation {
+  color: white;
+  font-family: Abhaya Libre ExtraBold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+  }
+  p {
+    margin-left: 14%;
+    &:nth-of-type(1) {
+      font-size: 3vw;
+      margin-top: 10%;
+    }
+    &:nth-of-type(2),
+    &:nth-of-type(3) {
+      font-size: 1.5vw;
+      margin-top: 2%;
+      width: 54%;
+    }
+  }
+  .arrowDown {
+    margin: auto;
+    margin-top: 3%;
+    width: 1.5vw;
+    height: 2vw;
+    animation: arrowDown 2s infinite;
+    transform: rotate(90deg);
+    @keyframes arrowDown {
+      0% {
+        opacity: 0;
+        transform: rotate(90deg) translate(0, 0);
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        transform: rotate(90deg) translate(250%, 0);
+      }
+    }
+  }
+}

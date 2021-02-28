@@ -2,8 +2,6 @@ import React from "react";
 import "./greatPeople.scss";
 import Carousel from "./carousel/carousel";
 import greatePeople from "./famousPeople.json";
-import leftArrow from "./left_icon.svg";
-import rightArrow from "./right_icon.svg";
 class GreatPeople extends React.Component {
   state = {
     prevSlide: 0,
@@ -37,12 +35,12 @@ class GreatPeople extends React.Component {
         </div>
         <div className="arrow">
           <img
-            src={leftArrow}
+            src={"/images/other/arrowGreatPeople.svg"}
             alt="стрелка"
             onClick={() => this.changeSlide("prev")}
           />
           <img
-            src={rightArrow}
+            src={"/images/other/arrowGreatPeople.svg"}
             alt="стрелка"
             onClick={() => this.changeSlide("next")}
           />
