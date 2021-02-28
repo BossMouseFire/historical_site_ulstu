@@ -67,7 +67,7 @@ class AttractionBlock extends Component {
           class="carouselAttraction"
           style={{
             transition: "transform ease 600ms",
-            transform: `translateX(-${this.state.width * 1.745}px)`,
+            transform: `translateX(-${this.state.width * 1.737}px)`,
           }}
         >
           {this.state.array.map((item) => (
