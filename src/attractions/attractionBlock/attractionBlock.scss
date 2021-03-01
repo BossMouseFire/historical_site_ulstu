@@ -27,17 +27,27 @@
   }
   .carouselAttraction {
     display: flex;
+    width: 375%;
+    justify-content: space-between;
     margin-top: 2%;
-    img {
-      width: 47vw;
-      margin-left: 26%;
-      margin-right: 9%;
-    }
-    p {
-      font-family: Abhaya Libre ExtraBold;
-      font-size: 3.5vw;
-      text-align: center;
-      color: #325e65;
+    margin-left: 26%;
+    div {
+      img {
+        width: 47vw;
+      }
+      hr {
+        margin-top: 4%;
+        margin-left: 10%;
+        border: 1px solid #325e65;
+        width: 80%;
+      }
+      p {
+        margin-top: 1%;
+        font-family: Abhaya Libre ExtraBold;
+        font-size: 1.7vw;
+        text-align: center;
+        color: #325e65;
+      }
     }
   }
 
@@ -51,9 +61,6 @@
     z-index: 2;
     img {
       width: 7%;
-      & svg {
-        stroke: black;
-      }
       &:nth-of-type(1) {
         transform: rotate(-180deg);
       }
@@ -67,8 +74,8 @@
   }
   .buttonAttraction {
     margin-top: 2%;
-    margin-left: 33%;
-    width: 35%;
+    margin-left: 39%;
+    width: 20%;
     text-align: center;
     background-color: #426166;
     font-size: 1.5vw;
