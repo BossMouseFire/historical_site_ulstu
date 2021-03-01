@@ -4,6 +4,9 @@ import { attractions } from "./attractions.json";
 import AttractionBlock from "./attractionBlock/attractionBlock";
 
 class Attractions extends Component {
+  Test = () => {
+    console.log("test");
+  };
   render() {
     return (
       <div>
@@ -31,15 +34,18 @@ class Attractions extends Component {
             известным городским местам.
           </p>
           <div class="arrowDown">
-            <img src={"/images/other/arrowDown.svg"} alt="стрелка вниз" />
+            <img
+              src={"/images/other/arrowDown.svg"}
+              alt="стрелка вниз"
+              onClick={this.Test}
+            />
           </div>
         </div>
 
         {attractions.map((attraction, key) => (
           <AttractionBlock
             title={attraction.title}
-            imagesPaths={attraction.imagesPaths}
-            imagesDescriptions={attraction.imagesDescriptions}
+            imagesPaths={attraction.images}
             mainPart1={attraction.topParagraph}
             mainPart2={attraction.bottomParagraph}
             url={attraction.url}

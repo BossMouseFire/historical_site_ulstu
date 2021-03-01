@@ -1,6 +1,6 @@
-import { Component } from "react";
-
+import React, { Component } from "react";
 import "./attractionBlock.scss";
+
 class AttractionBlock extends Component {
   state = {
     position: 0,
@@ -13,41 +13,42 @@ class AttractionBlock extends Component {
     });
   }
 
+  photoSlider = React.createRef();
+
   goToNextSlide = () => {
     const { position, array } = this.state;
-    const elements = document.querySelectorAll("#test");
-    let width = elements[position].width;
+    let width = this.photoSlider.current.width;
     const newPosition = position === array.length - 1 ? 0 : position + 1;
-    this.setState(
-      {
-        position: newPosition,
-        width: width * newPosition,
-      },
-      console.log(width)
-    );
+    this.setState({
+      position: newPosition,
+      width: width * newPosition,
+    });
   };
   goToPrevSlide = () => {
     const { position, array } = this.state;
-    const element = document.querySelectorAll("#test");
-    let width = element[position].width;
+    let width = this.photoSlider.current.width;
     const newPosition = position === 0 ? array.length - 1 : position - 1;
-    this.setState(
-      {
-        position: newPosition,
-        width: width * newPosition,
-      },
-      () => console.log(this.state.width, this.state.position)
-    );
+    this.setState({
+      position: newPosition,
+      width: width * newPosition,
+    });
+  };
+
+  aboutAttraction = () => {
+    const url = this.props.url;
+    window.open(url);
   };
   render() {
+    const { style, title, mainPart1, mainPart2 } = this.props;
+    const { array, width } = this.state;
     return (
-      <div class="attraction" style={this.props.style}>
+      <div class="attraction" style={style}>
         <div className="title">
-          <p>{this.props.title}</p>
+          <p>{title}</p>
           <hr />
         </div>
         <div className="mainPart">
-          <p>{this.props.mainPart1}</p>
+          <p>{mainPart1}</p>
         </div>
 
         <div className="arrowAttraction">
@@ -67,18 +68,26 @@ class AttractionBlock extends Component {
           class="carouselAttraction"
           style={{
             transition: "transform ease 600ms",
-            transform: `translateX(-${this.state.width * 1.737}px)`,
+            transform: `translateX(-${width * 1.744}px)`,
           }}
         >
-          {this.state.array.map((item) => (
-            <img src={"/images/attractions/" + item} alt="картинка" id="test" />
+          {array.map((item) => (
+            <div>
+              <img
+                src={"/images/attractions/" + item.path}
+                alt="картинка"
+                ref={this.photoSlider}
+              />
+              <hr />
+              <p>{item.description}</p>
+            </div>
           ))}
         </div>
 
         <div className="mainPart">
-          <p>{this.props.mainPart2}</p>
+          <p>{mainPart2}</p>
         </div>
-        <button className="buttonAttraction" onClick={this.aboutHuman}>
+        <button className="buttonAttraction" onClick={this.aboutAttraction}>
           Узнать подробнее
         </button>
       </div>
