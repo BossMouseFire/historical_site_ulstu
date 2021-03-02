@@ -82,7 +82,10 @@ class AttractionBlock extends Component {
           <p>{mainPart2}</p>
         </div>
         <button className="buttonAttraction" onClick={this.aboutAttraction}>
-          Узнать подробнее про {this.props.title}
+          Узнать подробнее про{" "}
+          {this.props.title === "Часовня Николая Чудотворца на Никольской горе"
+            ? "Часовню Николая Чудотворца на Никольской горе"
+            : this.props.title}
         </button>
       </div>
     );
