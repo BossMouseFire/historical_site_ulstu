@@ -68,7 +68,7 @@ class AttractionBlock extends Component {
           class="carouselAttraction"
           style={{
             transition: "transform ease 600ms",
-            transform: `translateX(-${width * 1.744}px)`,
+            transform: `translateX(-${width * 1.725}px)`,
           }}
         >
           {array.map((item) => (
@@ -88,7 +88,7 @@ class AttractionBlock extends Component {
           <p>{mainPart2}</p>
         </div>
         <button className="buttonAttraction" onClick={this.aboutAttraction}>
-          Узнать подробнее
+          Узнать подробнее про {this.props.title}
         </button>
       </div>
     );

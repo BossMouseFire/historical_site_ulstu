@@ -1,10 +1,10 @@
 .attraction {
   overflow: hidden;
   margin-bottom: 5%;
+  font-family: Abhaya Libre ExtraBold;
 
   .title {
     p {
-      font-family: Abhaya Libre ExtraBold;
       font-size: 3vw;
       text-align: center;
       color: #325e65;
@@ -16,7 +16,6 @@
     }
   }
   .mainPart {
-    font-family: Abhaya Libre ExtraBold;
     font-size: 1.5vw;
     margin-left: auto;
     margin-right: auto;
@@ -43,7 +42,6 @@
       }
       p {
         margin-top: 1%;
-        font-family: Abhaya Libre ExtraBold;
         font-size: 1.7vw;
         text-align: center;
         color: #325e65;
@@ -74,8 +72,9 @@
   }
   .buttonAttraction {
     margin-top: 2%;
-    margin-left: 39%;
-    width: 20%;
+    margin-left: 22.5%;
+    width: 55%;
+    height: 50px;
     text-align: center;
     background-color: #426166;
     font-size: 1.5vw;
