@@ -13,24 +13,18 @@ class AttractionBlock extends Component {
     });
   }
 
-  photoSlider = React.createRef();
-
   goToNextSlide = () => {
     const { position, array } = this.state;
-    let width = this.photoSlider.current.width;
     const newPosition = position === array.length - 1 ? 0 : position + 1;
     this.setState({
       position: newPosition,
-      width: width * newPosition,
     });
   };
   goToPrevSlide = () => {
     const { position, array } = this.state;
-    let width = this.photoSlider.current.width;
     const newPosition = position === 0 ? array.length - 1 : position - 1;
     this.setState({
       position: newPosition,
-      width: width * newPosition,
     });
   };
 
@@ -40,7 +34,7 @@ class AttractionBlock extends Component {
   };
   render() {
     const { style, title, mainPart1, mainPart2 } = this.props;
-    const { array, width } = this.state;
+    const { array, position } = this.state;
     return (
       <div class="attraction" style={style}>
         <div className="title">
@@ -68,13 +62,13 @@ class AttractionBlock extends Component {
           class="carouselAttraction"
           style={{
             transition: "transform ease 600ms",
-            transform: `translateX(-${width * 1.725}px)`,
+            transform: `translateX(-${position * 21.865}%)`,
           }}
         >
           {array.map((item) => (
             <div>
               <img
-                src={"/images/attractions/" + item.path}
+                src={"/images/attractions" + item.path}
                 alt="картинка"
                 ref={this.photoSlider}
               />
