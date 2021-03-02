@@ -4,9 +4,6 @@ import { attractions } from "./attractions.json";
 import AttractionBlock from "./attractionBlock/attractionBlock";
 
 class Attractions extends Component {
-  Test = () => {
-    console.log("test");
-  };
   render() {
     return (
       <div>
@@ -37,7 +34,6 @@ class Attractions extends Component {
             <img
               src={"/images/other/arrowDown.svg"}
               alt="стрелка вниз"
-              onClick={this.Test}
             />
           </div>
         </div>
