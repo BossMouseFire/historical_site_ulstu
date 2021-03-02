@@ -4,6 +4,61 @@ import { attractions } from "./attractions.json";
 import AttractionBlock from "./attractionBlock/attractionBlock";
 
 class Attractions extends Component {
+  backgroundAttraction = React.createRef();
+  buttonScroll = React.createRef();
+  scrollUp = () => {
+    this.backgroundAttraction.current.scrollIntoView({
+      block: "center",
+      behavior: "smooth",
+    });
+  };
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+  handleScroll = () => {
+    this.arrowUp();
+    // this.test();
+  };
+  // test = () => {
+  //   const animItems = document.querySelectorAll(".anim-items");
+
+  //   animItems.forEach((item) => {
+  //     const animItemHeight = item.offsetHeight;
+  //     const animItemOffset = this.getCoords(item).top;
+  //     const animStart = 6;
+  //     let animItemPoint = window.innerHeight - animItemHeight / animStart;
+  //     if (animItemHeight > window.innerHeight) {
+  //       animItemPoint = window.innerHeight - window.innerHeight / animStart;
+  //     }
+
+  //     if (
+  //       window.pageYOffset > animItemOffset - animItemPoint &&
+  //       window.pageYOffset < animItemPoint + animItemHeight
+  //     ) {
+  //       item.classList.add("active");
+  //       console.log("test");
+  //     }
+  //   });
+  // };
+  // getCoords = (elem) => {
+  //   // кроме IE8-
+  //   var box = elem.getBoundingClientRect();
+
+  //   return {
+  //     top: box.top + window.pageYOffset,
+  //     left: box.left + window.pageXOffset,
+  //   };
+  // };
+  arrowUp = () => {
+    if (window.pageYOffset + 250 > document.documentElement.clientHeight) {
+      this.buttonScroll.current.style.opacity = 1;
+    } else {
+      this.buttonScroll.current.style.opacity = 0;
+    }
+  };
   render() {
     return (
       <div>
@@ -15,6 +70,7 @@ class Attractions extends Component {
             backgroundAttachment: "fixed",
             backgroundPositionY: "50%",
           }}
+          ref={this.backgroundAttraction}
         >
           <p>Культурный гид по Ульяновской области!</p>
           <p>
@@ -33,7 +89,9 @@ class Attractions extends Component {
             <img src={"/images/other/arrowDown.svg"} alt="стрелка вниз" />
           </div>
         </div>
-
+        <div className="test" onClick={this.scrollUp} ref={this.buttonScroll}>
+          <img src={"/images/other/arrowDown.svg"} alt="стрелка вверх" />
+        </div>
         {attractions.map((attraction, key) => (
           <AttractionBlock
             title={attraction.title}
