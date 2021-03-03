@@ -20,38 +20,35 @@ class Attractions extends Component {
   }
   handleScroll = () => {
     this.arrowUp();
-    // this.test();
+    this.animateAttraction();
   };
-  // test = () => {
-  //   const animItems = document.querySelectorAll(".anim-items");
+  animateAttraction = () => {
+    const animItems = document.querySelectorAll(".animItem");
 
-  //   animItems.forEach((item) => {
-  //     const animItemHeight = item.offsetHeight;
-  //     const animItemOffset = this.getCoords(item).top;
-  //     const animStart = 6;
-  //     let animItemPoint = window.innerHeight - animItemHeight / animStart;
-  //     if (animItemHeight > window.innerHeight) {
-  //       animItemPoint = window.innerHeight - window.innerHeight / animStart;
-  //     }
+    animItems.forEach((item) => {
+      const animItemHeight = item.offsetHeight;
+      const animItemOffset = this.getCoords(item).top;
+      const animStart = 6;
+      let animItemPoint = window.innerHeight - animItemHeight / animStart;
+      if (animItemHeight > window.innerHeight) {
+        animItemPoint = window.innerHeight - window.innerHeight / animStart;
+      }
 
-  //     if (
-  //       window.pageYOffset > animItemOffset - animItemPoint &&
-  //       window.pageYOffset < animItemPoint + animItemHeight
-  //     ) {
-  //       item.classList.add("active");
-  //       console.log("test");
-  //     }
-  //   });
-  // };
-  // getCoords = (elem) => {
-  //   // кроме IE8-
-  //   var box = elem.getBoundingClientRect();
-
-  //   return {
-  //     top: box.top + window.pageYOffset,
-  //     left: box.left + window.pageXOffset,
-  //   };
-  // };
+      if (
+        window.pageYOffset > animItemOffset - animItemPoint &&
+        window.pageYOffset < animItemOffset + animItemHeight
+      ) {
+        item.classList.add("active");
+      }
+    });
+  };
+  getCoords = (elem) => {
+    const box = elem.getBoundingClientRect(),
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    return {
+      top: box.top + scrollTop,
+    };
+  };
   arrowUp = () => {
     if (window.pageYOffset + 250 > document.documentElement.clientHeight) {
       this.buttonScroll.current.style.opacity = 1;
@@ -89,7 +86,11 @@ class Attractions extends Component {
             <img src={"/images/other/arrowDown.svg"} alt="стрелка вниз" />
           </div>
         </div>
-        <div className="test" onClick={this.scrollUp} ref={this.buttonScroll}>
+        <div
+          className="arrowUp"
+          onClick={this.scrollUp}
+          ref={this.buttonScroll}
+        >
           <img src={"/images/other/arrowDown.svg"} alt="стрелка вверх" />
         </div>
         {attractions.map((attraction, key) => (
@@ -99,7 +100,13 @@ class Attractions extends Component {
             mainPart1={attraction.topParagraph}
             mainPart2={attraction.bottomParagraph}
             url={attraction.url}
-            style={key === 0 ? { marginTop: "48%" } : {}}
+            style={
+              key === 0
+                ? { marginTop: "48%" }
+                : key === 8
+                ? { marginBottom: "5%" }
+                : {}
+            }
           />
         ))}
       </div>
