@@ -36,16 +36,16 @@ class AttractionBlock extends Component {
     const { style, title, mainPart1, mainPart2 } = this.props;
     const { array, position } = this.state;
     return (
-      <div class="attraction" style={style}>
-        <div className="title">
+      <div class="attraction animItem" style={style}>
+        <div className="title animShow">
           <p>{title}</p>
           <hr />
         </div>
-        <div className="mainPart">
+        <div className="mainPart animShow">
           <p>{mainPart1}</p>
         </div>
 
-        <div className="arrowAttraction">
+        <div className="arrowAttraction animShow">
           <img
             src={"/images/other/arrowGreatPeople.svg"}
             alt="стрелка"
@@ -59,7 +59,7 @@ class AttractionBlock extends Component {
         </div>
 
         <div
-          class="carouselAttraction"
+          class="carouselAttraction animShow"
           style={{
             transition: "transform ease 600ms",
             transform: `translateX(-${position * 21.865}%)`,
@@ -78,10 +78,10 @@ class AttractionBlock extends Component {
           ))}
         </div>
 
-        <div className="mainPart">
+        <div className="mainPart animShow">
           <p>{mainPart2}</p>
         </div>
-        <button className="buttonAttraction" onClick={this.aboutAttraction}>
+        <button className="buttonAttraction animShow" onClick={this.aboutAttraction}>
           Узнать подробнее про{" "}
           {this.props.title === "Часовня Николая Чудотворца на Никольской горе"
             ? "Часовню Николая Чудотворца на Никольской горе"

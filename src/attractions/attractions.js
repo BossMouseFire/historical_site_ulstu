@@ -4,6 +4,58 @@ import { attractions } from "./attractions.json";
 import AttractionBlock from "./attractionBlock/attractionBlock";
 
 class Attractions extends Component {
+  backgroundAttraction = React.createRef();
+  buttonScroll = React.createRef();
+  scrollUp = () => {
+    this.backgroundAttraction.current.scrollIntoView({
+      block: "center",
+      behavior: "smooth",
+    });
+  };
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+  handleScroll = () => {
+    this.arrowUp();
+    this.animateAttraction();
+  };
+  animateAttraction = () => {
+    const animItems = document.querySelectorAll(".animItem");
+
+    animItems.forEach((item) => {
+      const animItemHeight = item.offsetHeight;
+      const animItemOffset = this.getCoords(item).top;
+      const animStart = 6;
+      let animItemPoint = window.innerHeight - animItemHeight / animStart;
+      if (animItemHeight > window.innerHeight) {
+        animItemPoint = window.innerHeight - window.innerHeight / animStart;
+      }
+
+      if (
+        window.pageYOffset > animItemOffset - animItemPoint &&
+        window.pageYOffset < animItemOffset + animItemHeight
+      ) {
+        item.classList.add("active");
+      }
+    });
+  };
+  getCoords = (elem) => {
+    const box = elem.getBoundingClientRect(),
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    return {
+      top: box.top + scrollTop,
+    };
+  };
+  arrowUp = () => {
+    if (window.pageYOffset + 250 > document.documentElement.clientHeight) {
+      this.buttonScroll.current.style.opacity = 1;
+    } else {
+      this.buttonScroll.current.style.opacity = 0;
+    }
+  };
   render() {
     return (
       <div>
@@ -15,6 +67,7 @@ class Attractions extends Component {
             backgroundAttachment: "fixed",
             backgroundPositionY: "50%",
           }}
+          ref={this.backgroundAttraction}
         >
           <p>Культурный гид по Ульяновской области!</p>
           <p>
@@ -33,7 +86,13 @@ class Attractions extends Component {
             <img src={"/images/other/arrowDown.svg"} alt="стрелка вниз" />
           </div>
         </div>
-
+        <div
+          className="arrowUp"
+          onClick={this.scrollUp}
+          ref={this.buttonScroll}
+        >
+          <img src={"/images/other/arrowDown.svg"} alt="стрелка вверх" />
+        </div>
         {attractions.map((attraction, key) => (
           <AttractionBlock
             title={attraction.title}
@@ -41,7 +100,13 @@ class Attractions extends Component {
             mainPart1={attraction.topParagraph}
             mainPart2={attraction.bottomParagraph}
             url={attraction.url}
-            style={key === 0 ? { marginTop: "48%" } : {}}
+            style={
+              key === 0
+                ? { marginTop: "48%" }
+                : key === 8
+                ? { marginBottom: "5%" }
+                : {}
+            }
           />
         ))}
       </div>
