@@ -13,16 +13,16 @@ class GreatPeople extends React.Component {
   changeSlide = (state) => {
     if (state === "next") {
       this.setState({
-        prevSlide: this.state.prevSlide + 1 > 13 ? 0 : this.state.prevSlide + 1,
-        slide: this.state.slide + 1 > 13 ? 0 : this.state.slide + 1,
-        nextSlide: this.state.nextSlide + 1 > 13 ? 0 : this.state.nextSlide + 1,
+        prevSlide: this.state.prevSlide + 1 > 19 ? 0 : this.state.prevSlide + 1,
+        slide: this.state.slide + 1 > 19 ? 0 : this.state.slide + 1,
+        nextSlide: this.state.nextSlide + 1 > 19 ? 0 : this.state.nextSlide + 1,
         stateSlide: "next",
       });
     } else {
       this.setState({
-        prevSlide: this.state.prevSlide - 1 < 0 ? 13 : this.state.prevSlide - 1,
-        slide: this.state.slide - 1 < 0 ? 13 : this.state.slide - 1,
-        nextSlide: this.state.nextSlide - 1 < 0 ? 13 : this.state.nextSlide - 1,
+        prevSlide: this.state.prevSlide - 1 < 0 ? 19 : this.state.prevSlide - 1,
+        slide: this.state.slide - 1 < 0 ? 19 : this.state.slide - 1,
+        nextSlide: this.state.nextSlide - 1 < 0 ? 19 : this.state.nextSlide - 1,
         stateSlide: "prev",
       });
     }
