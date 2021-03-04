@@ -37,9 +37,11 @@ class AttractionBlock extends Component {
     const { array, position } = this.state;
     return (
       <div class="attraction animItem" style={style}>
-        <div className="title animShow">
-          <p>{title}</p>
-          <hr />
+        <div className="titleBlock">
+          <div className="title animShow">
+            <p>{title}</p>
+            <hr />
+          </div>
         </div>
         <div className="mainPart animShow">
           <p>{mainPart1}</p>
@@ -81,12 +83,18 @@ class AttractionBlock extends Component {
         <div className="mainPart animShow">
           <p>{mainPart2}</p>
         </div>
-        <button className="buttonAttraction animShow" onClick={this.aboutAttraction}>
-          Узнать подробнее про{" "}
-          {this.props.title === "Часовня Николая Чудотворца на Никольской горе"
-            ? "Часовню Николая Чудотворца на Никольской горе"
-            : this.props.title}
-        </button>
+        <div className="buttonBlock">
+          <button
+            className="buttonAttraction animShow"
+            onClick={this.aboutAttraction}
+          >
+            Узнать подробнее про{" "}
+            {this.props.title ===
+            "Часовня Николая Чудотворца на Никольской горе"
+              ? "Часовню Николая Чудотворца на Никольской горе"
+              : this.props.title}
+          </button>
+        </div>
       </div>
     );
   }
