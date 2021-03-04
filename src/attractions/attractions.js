@@ -49,11 +49,18 @@ class Attractions extends Component {
       top: box.top + scrollTop,
     };
   };
-  arrowUp = () => {
+  arrowUp = async () => {
     if (window.pageYOffset + 250 > document.documentElement.clientHeight) {
-      this.buttonScroll.current.style.opacity = 1;
+      this.buttonScroll.current.style.display = "block";
+      setTimeout(() => (this.buttonScroll.current.style.opacity = 1), 0);
     } else {
-      this.buttonScroll.current.style.opacity = 0;
+      if (this.buttonScroll.current.style.opacity == 1) {
+        this.buttonScroll.current.style.opacity = 0;
+        setTimeout(
+          () => (this.buttonScroll.current.style.display = "none"),
+          700
+        );
+      }
     }
   };
   render() {
@@ -91,7 +98,7 @@ class Attractions extends Component {
           onClick={this.scrollUp}
           ref={this.buttonScroll}
         >
-          <img src={"/images/other/arrowDown.svg"} alt="стрелка вверх" />
+          <img src={"/images/other/verticalArrow.svg"} alt="стрелка вверх" />
         </div>
         {attractions.map((attraction, key) => (
           <AttractionBlock
