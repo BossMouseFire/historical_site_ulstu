@@ -38,9 +38,12 @@
       width: 16%;
       img {
         transform: translatez(0);
+        border-radius: 5px;
+        box-shadow: 0 14px 15px rgba(0, 0, 0, 0.25),
+          0 5px 5px rgba(0, 0, 0, 0.22);
       }
       button {
-        margin-top: 0.6vw;
+        margin-top: 0.7vw;
         font-size: 0.7vw;
         text-align: center;
         background-color: #426166;
