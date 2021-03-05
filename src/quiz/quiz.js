@@ -3,8 +3,6 @@ import Map from "../quiz/map/map";
 import QuizWindow from "./quizWindow/quizWindow";
 import DefaultWindow from "./quizWindow/defaultWindow";
 import "./quiz.scss";
-import { Spring } from "react-spring/renderprops";
-
 class Quiz extends React.Component {
   state = {
     district: undefined,
@@ -29,13 +27,7 @@ class Quiz extends React.Component {
             pastDistrict={this.state.pastDistrict}
           />
         ) : (
-          <Spring
-            from={{ opacity: 0 }}
-            to={{ opacity: 1 }}
-            config={{ duration: 1000 }}
-          >
-            {(props) => <DefaultWindow style={props} />}
-          </Spring>
+          <DefaultWindow />
         )}
       </div>
     );

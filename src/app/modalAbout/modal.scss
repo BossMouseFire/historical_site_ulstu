@@ -1,0 +1,66 @@
+.modalWindow {
+  position: fixed;
+  z-index: 7;
+  top: 30%;
+  left: 31%;
+  border-radius: 0.5%;
+  background: #e1f2ed;
+  width: 37vw;
+  height: 22vw;
+  font-family: Abhaya Libre ExtraBold;
+  color: #4f686c;
+  padding: 1.8%;
+  text-align: center;
+  .titleModal {
+    font-weight: bold;
+    font-size: 1.3vw;
+  }
+  .bodyModal {
+    text-align: left;
+    font-size: 0.9vw;
+    margin-top: 1%;
+  }
+  .cross {
+    position: absolute;
+    top: 0.5vw;
+    right: 0.7vw;
+    width: 1.6vw;
+  }
+  .changeSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2%;
+    .section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 16%;
+      img {
+        transform: translatez(0);
+      }
+      button {
+        margin-top: 0.6vw;
+        font-size: 0.7vw;
+        text-align: center;
+        background-color: #426166;
+        color: white;
+        border-radius: 5px;
+        transition: background-color 0.5s ease 0s;
+        &:hover {
+          background-color: #355257;
+          transition: all 0.5s ease 0s;
+        }
+      }
+    }
+  }
+}
+.modalWrapper {
+  position: fixed;
+  background: rgba($color: #000000, $alpha: 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
