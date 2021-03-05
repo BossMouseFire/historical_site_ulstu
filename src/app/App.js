@@ -1,17 +1,26 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import emblem from "../img/emblem.svg";
 import Quiz from "../quiz/quiz";
 import GreatPeople from "../greatPeople/greatPeople";
 import Attractions from "../attractions/attractions";
-
+import Modal from "./modalAbout/modal";
 class App extends React.Component {
   state = {
     history: false,
-    attractions: false,
-    map: true,
+    attractions: true,
+    map: false,
     greatPeople: false,
+    modal: false,
   };
+
+  componentDidMount() {
+    if (!localStorage.getItem("viewModal")) {
+      this.stateModel();
+      localStorage.setItem("viewModal", true);
+    }
+  }
+
   changeState = (section) => {
     this.setState(
       {
@@ -25,6 +34,25 @@ class App extends React.Component {
           [section]: true,
         })
     );
+  };
+  stateModel = () => {
+    this.setState(
+      {
+        modal: !this.state.modal,
+      },
+      () => {
+        if (this.state.modal) {
+          document.body.style.overflow = "hidden";
+        } else document.body.style.overflow = "";
+        const test = document.querySelector("#wrapper");
+        test.classList.toggle("modalWrapper");
+      }
+    );
+  };
+
+  changeStateProps = (section) => {
+    this.stateModel();
+    this.changeState(section);
   };
   render() {
     return (
@@ -47,8 +75,14 @@ class App extends React.Component {
         ) : (
           <Attractions />
         )}
+        <Modal
+          isOpen={this.state.modal}
+          changeStateProps={this.changeStateProps}
+          stateModel={this.stateModel}
+        />
         <nav className="authorsInfo">
           <p>© Сайт создан студентами УлГТУ</p>
+          <p onClick={this.stateModel}>О нас</p>
         </nav>
       </div>
     );
