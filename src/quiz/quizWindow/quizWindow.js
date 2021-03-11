@@ -37,7 +37,10 @@ class QuizWindow extends React.Component {
                 </div>
                 <div className="imgBlock">
                   <img
-                    src={"/images/districts/" + districts[this.props.pastDistrict]["imgPath"]}
+                    src={
+                      "/images/districts/" +
+                      districts[this.props.pastDistrict]["imgPath"]
+                    }
                     alt="фото региона"
                     className="imgWindow"
                   />

@@ -1,4 +1,4 @@
-import "./map.css";
+import "./map.scss";
 import React from "react";
 class Map extends React.Component {
   areaHandlerEnter = (event, district) => {
@@ -36,7 +36,6 @@ class Map extends React.Component {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 718 652"
-          className="map"
         >
           <defs>
             <radialGradient
