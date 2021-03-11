@@ -109,7 +109,7 @@ class Attractions extends Component {
             url={attraction.url}
             style={
               key === 0
-                ? { marginTop: "50vw" }
+                ? { marginTop: "100vh" }
                 : key === 8
                 ? { marginBottom: "5vw" }
                 : {}

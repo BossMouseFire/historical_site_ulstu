@@ -1,3 +1,73 @@
-.containerGubernia{
-    
+.containerGubernia {
+  .horsePolk {
+    display: flex;
+    flex-direction: row;
+    div {
+      &:nth-of-type(1) {
+        margin-right: 4vw;
+        width: 44vw;
+      }
+      &:nth-of-type(2) {
+        margin-top: 1.8vw;
+        img {
+          width: 30vw;
+        }
+        p {
+          font-style: italic;
+          margin-top: 1%;
+          font-size: 1.1vw;
+          text-align: center;
+          color: #325e65;
+        }
+      }
+    }
+  }
+  .photoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .photo {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1.5vw;
+      img {
+        width: 36vw;
+      }
+      p {
+        font-style: italic;
+        margin-top: 1%;
+        font-size: 1.2vw;
+        text-align: center;
+        color: #325e65;
+      }
+    }
+  }
+  .lateCentury {
+    display: flex;
+    flex-direction: row;
+    .text {
+      margin-right: 4vw;
+      width: 63vw;
+    }
+    .photosCard {
+      margin-top: 1.8vw;
+      display: flex;
+      flex-direction: column;
+      div {
+        img {
+          width: 23vw;
+        }
+        p {
+          font-style: italic;
+          margin-top: 1%;
+          font-size: 0.93vw;
+          text-align: center;
+          color: #325e65;
+        }
+        &:nth-of-type(2) {
+          margin-top: 2vh;
+        }
+      }
+    }
+  }
 }
