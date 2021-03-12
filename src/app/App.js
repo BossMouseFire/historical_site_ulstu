@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.scss";
-import emblem from "../img/emblem.svg";
 import Quiz from "../quiz/quiz";
 import GreatPeople from "../greatPeople/greatPeople";
 import Attractions from "../attractions/attractions";
+import History from "../history/history"
 import Modal from "./modalAbout/modal";
 class App extends React.Component {
   state = {
@@ -55,6 +55,7 @@ class App extends React.Component {
     this.changeState(section);
   };
   render() {
+    const emblem = "/images/other/emblem.svg"
     return (
       <div>
         <nav className="navbar">
@@ -69,12 +70,12 @@ class App extends React.Component {
           </button>
         </nav>
         {this.state.map ? (
-          <Quiz />
+          <Quiz modalState={this.state.modal}/>
         ) : this.state.greatPeople ? (
-          <GreatPeople />
-        ) : (
+          <GreatPeople modalState={this.state.modal}/>
+        ) : this.state.attractions ? (
           <Attractions />
-        )}
+        ) : <History/>}
         <Modal
           isOpen={this.state.modal}
           changeStateProps={this.changeStateProps}

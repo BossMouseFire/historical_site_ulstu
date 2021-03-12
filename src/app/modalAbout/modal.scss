@@ -22,9 +22,11 @@
   }
   .cross {
     position: absolute;
-    top: 0.5vw;
-    right: 0.7vw;
-    width: 1.6vw;
+    top: 0.74vw;
+    right: 0.45vw;
+    img {
+      width: 1.35vw;
+    }
   }
   .changeSection {
     display: flex;

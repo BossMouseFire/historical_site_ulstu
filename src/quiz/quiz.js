@@ -25,6 +25,7 @@ class Quiz extends React.Component {
           <QuizWindow
             district={this.state.district}
             pastDistrict={this.state.pastDistrict}
+            modalState={this.props.modalState}
           />
         ) : (
           <DefaultWindow />

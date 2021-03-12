@@ -58,11 +58,13 @@ class GreatPeople extends React.Component {
           biography3={greatePeople["people"][this.state.nextSlide]["biography"]}
         />
         <div className="blockInfo">
-          <hr />
-          <p>
-            Выберите симбирянина-ульяновца нажатиями на стрелочки и наведите на
-            карточку с ним, чтобы узнать больше о нём.
-          </p>
+          <div className="info">
+            <hr />
+            <p>
+              Выберите симбирянина-ульяновца нажатиями на стрелочки и наведите
+              на карточку с ним, чтобы узнать больше о нём.
+            </p>
+          </div>
         </div>
       </div>
     );

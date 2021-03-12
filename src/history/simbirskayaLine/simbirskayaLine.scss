@@ -1,0 +1,51 @@
+.containerLine {
+  margin-top: 2vw;
+  .partOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    div {
+      &:nth-of-type(1) {
+        margin-right: 7vw;
+        width: 44vw;
+      }
+      &:nth-of-type(2) {
+        margin-top: 1.8vw;
+        img {
+          width: 26vw;
+        }
+        p {
+          font-style: italic;
+          margin-top: 1%;
+          font-size: 1.2vw;
+          text-align: center;
+          color: #325e65;
+        }
+      }
+    }
+  }
+  .photoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .photo {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1.5vw;
+      img {
+        width: 36vw;
+      }
+      p {
+        font-style: italic;
+        margin-top: 1%;
+        font-size: 1.2vw;
+        text-align: center;
+        color: #325e65;
+      }
+    }
+  }
+  p {
+    font-size: 1.5vw;
+    margin-top: 1.5vw;
+  }
+}
