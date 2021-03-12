@@ -1,8 +1,6 @@
-import React from "react";
-import './imenCulture.scss'
 export default function ImenCulture() {
   return (
-    <div className="containerImen">
+    <div className="containerImen epochSelection">
       <div className="titleEpoch">Именьковская культура, III—VII века</div>
       <p>
         В III—VII веках на территории Ульяновской области расселяются племена
@@ -17,14 +15,14 @@ export default function ImenCulture() {
         культурами, стали прародителями Киевской Руси.
       </p>
       <div className="photoContainer">
-          <div class="photo">
-              <img src="/images/history/chertov_gorodok.jpg" alt="город чертов"/>
-              <p>Туристическая поляна, «Чёртов городок»</p>
-          </div>
-          <div class="photo">
-              <img src="/images/history/chertov_pirs.jpg" alt="порт чертов"/>
-              <p>Пирс, «Чёртов городок»</p>
-          </div>
+        <div class="photo">
+          <img src="/images/history/chertov_gorodok.jpg" alt="город чертов" />
+          <p>Туристическая поляна, «Чёртов городок»</p>
+        </div>
+        <div class="photo">
+          <img src="/images/history/chertov_pirs.jpg" alt="порт чертов" />
+          <p>Пирс, «Чёртов городок»</p>
+        </div>
       </div>
     </div>
   );

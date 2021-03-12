@@ -6,30 +6,32 @@ import BulgaroPeriod from "./bulgaroPeriod/bulgaroPeriod";
 import SimbirskayaLine from "./simbirskayaLine/simbirskayaLine";
 import SimbirskProvince from "./simbirskProvince/simbirskProvince";
 import SimbirskGuberniya from './simbirskayaGuberniya/simbirskGuberniya'
+import UlskGubernia from './ulskGubernia/ulskGubernia'
+import UlskRegion from './ulskRegion/ulskRegion'
 class History extends Component {
   componentDidMount() {
-    // document.querySelectorAll(".sel")[0].classList.add("active");
+    document.querySelectorAll(".epoch")[0].classList.add("active");
     window.addEventListener("scroll", this.handleScroll);
   }
   componentWillUnmount() {
     window.removeEventListener("scroll", this.handleScroll);
   }
-  // handleScroll = () => {
-  //   const scrollDistance = window.scrollY;
-  //   document.querySelectorAll(".sel").forEach((element, i) => {
-  //     if (
-  //       element.offsetTop - document.querySelector("nav").clientHeight * 1.5 <=
-  //       scrollDistance
-  //     ) {
-  //       document.querySelectorAll(".epoch").forEach((el) => {
-  //         if (el.classList.contains("active")) {
-  //           el.classList.remove("active");
-  //         }
-  //       });
-  //       document.querySelectorAll(".epoch")[i].classList.add("active");
-  //     }
-  //   });
-  // };
+  handleScroll = () => {
+    const scrollDistance = window.scrollY;
+    document.querySelectorAll(".epochSelection").forEach((element, i) => {
+      if (
+        element.offsetTop - document.querySelector("nav").clientHeight * 1.5 <=
+        scrollDistance
+      ) {
+        document.querySelectorAll(".epoch").forEach((el) => {
+          if (el.classList.contains("active")) {
+            el.classList.remove("active");
+          }
+        });
+        document.querySelectorAll(".epoch")[i].classList.add("active");
+      }
+    });
+  };
   render() {
     return (
       <div>
@@ -43,6 +45,8 @@ class History extends Component {
           <SimbirskayaLine />
           <SimbirskProvince />
           <SimbirskGuberniya/>
+          <UlskGubernia/>
+          <UlskRegion/>
         </div>
       </div>
     );

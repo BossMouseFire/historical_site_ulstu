@@ -1,8 +1,7 @@
-import React from "react";
 import "./bulgaroPeriod.scss";
 export default function BulgaroPeriod() {
   return (
-    <div className="containerBulgaro">
+    <div className="containerBulgaro epochSelection">
       <div className="titleEpoch">
         Булгаро-татарский период, VIII — XVI века
       </div>

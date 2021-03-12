@@ -1,8 +1,6 @@
-import React from "react";
-import "./simbirskProvince.scss";
 export default function SimbirskProvince() {
   return (
-    <div>
+    <div className="epochSelection">
       <div class="titleEpoch">
         Симбирская провинция и Симбирское наместничество, XVIII век
       </div>

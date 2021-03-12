@@ -1,8 +1,7 @@
-import React from "react";
 import "./simbirskGuberniya.scss";
 export default function SimbirskGuberniya() {
   return (
-    <div className="containerGubernia">
+    <div className="containerGubernia epochSelection">
       <div className="titleEpoch">Симбирская губерния, XIX — XX века</div>
       <p>
         23 декабря 1796 год вышел Указ императора Павла I «О новом разделении
@@ -113,7 +112,7 @@ export default function SimbirskGuberniya() {
           </div>
         </div>
       </div>
-      <p style={{ marginBottom: "10vh" }}>
+      <p>
         В марте-апреле 1919 года на территории губернии прошли крестьянские
         волнения, названной «Чапанная война».
       </p>

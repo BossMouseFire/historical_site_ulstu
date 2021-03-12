@@ -1,8 +1,7 @@
-import React from "react";
 import "./simbirskayaLine.scss";
 export default function SimbirskayaLine() {
   return (
-    <div className="containerLine">
+    <div className="containerLine epochSelection">
       <div className="titleEpoch">Симбирская черта, XVII век</div>
       <div className="partOne">
         <div>
