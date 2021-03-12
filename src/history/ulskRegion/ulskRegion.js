@@ -1,8 +1,10 @@
-import './ulskRegion.scss'
+import "./ulskRegion.scss";
 export default function UlskRegion() {
   return (
     <div className="containerUlskRegion epochSelection">
-      <div className="titleEpoch">Ульяновская область, XX век — наше время </div>
+      <div className="titleEpoch">
+        Ульяновская область, XX век — наше время{" "}
+      </div>
       <p>
         19 января 1943 года из ряда районов Куйбышевской и Пензенской областей
         образуется Ульяновская область. В 1950—1960-х годах в Ульяновской
@@ -17,11 +19,14 @@ export default function UlskRegion() {
       <div className="photoContainer">
         <div className="photo">
           <img src="/images/history/atom_reactor.jpg" />
-          <p>Научно-исследовательский институт атомных реакторов в советское время</p>
+          <p>
+            Научно-исследовательский институт атомных реакторов в советское
+            время
+          </p>
         </div>
         <div className="photo">
           <img src="/images/history/imperator_bridge.jpg" />
-          <p>Императорский мост, 1916—1920 гг.</p>
+          <p>Императорский мост, 1916 — 1920 гг.</p>
         </div>
       </div>
       <p>
@@ -43,17 +48,17 @@ export default function UlskRegion() {
       <div className="photoContainer">
         <div className="photo">
           <img src="/images/history/president_bridge_building.jpg" />
-          <p>Строительство Президентского моста (июнь 2008)</p>
+          <p>Строительство Президентского моста (июнь 2008 г.)</p>
         </div>
         <div className="photo">
           <img src="/images/history/motor_zavod.jpg" />
-          <p>Въездные ворота УЗМД. 1945 год.</p>
+          <p>Въездные ворота УЗМД, 1945 г.</p>
         </div>
       </div>
       <p>
-        26 декабря 2013 года были приняты символы области — Герб и Флаг
-        Ульяновской области. 26 сентября 2017 года Банк России выпустила
-        памятную 10-ти рублёвую монету посвящённую Ульяновской области.
+        26 декабря 2013 года были приняты символы области — герб и флаг
+        Ульяновской области. 26 сентября 2017 года Банк России выпустил памятную
+        10-ти рублёвую монету, посвящённую Ульяновской области.
       </p>
       <div className="photoContainer last">
         <div className="photo">

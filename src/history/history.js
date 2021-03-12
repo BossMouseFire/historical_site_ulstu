@@ -5,9 +5,9 @@ import ImenCulture from "./imenkovskayaCulture/imenCulture";
 import BulgaroPeriod from "./bulgaroPeriod/bulgaroPeriod";
 import SimbirskayaLine from "./simbirskayaLine/simbirskayaLine";
 import SimbirskProvince from "./simbirskProvince/simbirskProvince";
-import SimbirskGuberniya from './simbirskayaGuberniya/simbirskGuberniya'
-import UlskGubernia from './ulskGubernia/ulskGubernia'
-import UlskRegion from './ulskRegion/ulskRegion'
+import SimbirskGuberniya from "./simbirskayaGuberniya/simbirskGuberniya";
+import UlskGubernia from "./ulskGubernia/ulskGubernia";
+import UlskRegion from "./ulskRegion/ulskRegion";
 class History extends Component {
   epochRef = React.createRef();
   componentDidMount() {
@@ -45,9 +45,9 @@ class History extends Component {
           <BulgaroPeriod />
           <SimbirskayaLine />
           <SimbirskProvince />
-          <SimbirskGuberniya/>
-          <UlskGubernia/>
-          <UlskRegion/>
+          <SimbirskGuberniya />
+          <UlskGubernia />
+          <UlskRegion />
         </div>
       </div>
     );
