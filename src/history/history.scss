@@ -13,6 +13,11 @@
       fill: #6eadad;
       transition: 500ms ease;
     }
+    path {
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }
 .historyContainer {

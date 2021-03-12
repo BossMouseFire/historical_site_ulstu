@@ -88,7 +88,10 @@
 
 .blockMap {
   position: absolute;
-  height: 90%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 50%;
   background: linear-gradient(
     270deg,
@@ -97,7 +100,7 @@
   );
   svg {
     width: 87%;
-    margin-top: 5vh;
+    margin-top: 10vh;
     margin-left: 2%;
   }
 }

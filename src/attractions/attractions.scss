@@ -19,21 +19,21 @@
     z-index: -1;
   }
   p {
-    margin-left: 14%;
+    margin-left: 14vw;
     &:nth-of-type(1) {
       font-size: 3vw;
-      margin-top: 10%;
+      margin-top: 20vh;
     }
     &:nth-of-type(2),
     &:nth-of-type(3) {
       font-size: 1.6vw;
-      margin-top: 2%;
+      margin-top: 4vh;
       width: 54%;
     }
   }
   .arrowDown {
     margin: auto;
-    margin-top: 10vh;
+    margin-top: 5vw;
     width: 1.5vw;
     height: 4vh;
     animation: arrowDown 2s infinite;

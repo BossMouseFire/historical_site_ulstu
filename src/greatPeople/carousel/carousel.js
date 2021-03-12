@@ -11,8 +11,8 @@ class Carousel extends React.Component {
               style={{
                 marginTop: "10vh",
                 marginLeft: "13vw",
-                width: "18%",
-                height: "45%",
+                width: "18vw",
+                height: "22.5vw",
                 pointerEvents: "none",
                 zIndex: -2,
                 opacity: 0.8,
@@ -25,8 +25,8 @@ class Carousel extends React.Component {
               style={{
                 marginTop: "3vh",
                 marginLeft: "37vw",
-                width: "24%",
-                height: "59%",
+                width: "24vw",
+                height: "29.5vw",
                 pointerEvents: "auto",
                 zIndex: 1,
               }}
@@ -40,8 +40,8 @@ class Carousel extends React.Component {
               style={{
                 marginTop: "10vh",
                 marginLeft: "67vw",
-                width: "18%",
-                height: "45%",
+                width: "18vw",
+                height: "22.5vw",
                 pointerEvents: "none",
                 zIndex: -2,
                 opacity: 0.8,
@@ -57,8 +57,8 @@ class Carousel extends React.Component {
               from={{
                 marginTop: "10vh",
                 marginLeft: "13vw",
-                width: "18%",
-                height: "45%",
+                width: "18vw",
+                height: "22.5vw",
                 pointerEvents: "none",
                 zIndex: -2,
                 opacity: 0.8,
@@ -66,8 +66,8 @@ class Carousel extends React.Component {
               to={{
                 marginTop: "3vh",
                 marginLeft: "37vw",
-                width: "24%",
-                height: "59%",
+                width: "24vw",
+                height: "29.5vw",
                 pointerEvents: "auto",
                 zIndex: 2,
                 opacity: 1,
@@ -91,8 +91,8 @@ class Carousel extends React.Component {
               from={{
                 marginTop: "3vh",
                 marginLeft: "37vw",
-                width: "24%",
-                height: "59%",
+                width: "24vw",
+                height: "29.5vw",
                 pointerEvents: "auto",
                 zIndex: 1,
                 opacity: 0.8,
@@ -100,8 +100,8 @@ class Carousel extends React.Component {
               to={{
                 marginTop: "10vh",
                 marginLeft: "67vw",
-                width: "18%",
-                height: "45%",
+                width: "18vw",
+                height: "22.5vw",
                 pointerEvents: "none",
                 opacity: 0.8,
               }}
@@ -122,8 +122,8 @@ class Carousel extends React.Component {
               from={{
                 marginTop: "10vh",
                 marginLeft: "67vw",
-                width: "18%",
-                height: "45%",
+                width: "18vw",
+                height: "22.5vw",
                 pointerEvents: "none",
                 zIndex: -4,
                 opacity: 0,
@@ -131,8 +131,8 @@ class Carousel extends React.Component {
               to={{
                 marginTop: "10vh",
                 marginLeft: "13vw",
-                width: "18%",
-                height: "45%",
+                width: "18vw",
+                height: "22.5vw",
                 pointerEvents: "none",
                 opacity: 0.8,
                 zIndex: 2,
@@ -156,8 +156,8 @@ class Carousel extends React.Component {
               from={{
                 marginTop: "10vh",
                 marginLeft: "13vw",
-                width: "18%",
-                height: "45%",
+                width: "18vw",
+                height: "22.5vw",
                 pointerEvents: "none",
                 zIndex: -2,
                 opacity: 0,
@@ -165,8 +165,8 @@ class Carousel extends React.Component {
               to={{
                 marginTop: "10vh",
                 marginLeft: "67vw",
-                width: "18%",
-                height: "45%",
+                width: "18vw",
+                height: "22.5vw",
                 pointerEvents: "none",
                 zIndex: 1,
                 opacity: 0.8,
@@ -190,8 +190,8 @@ class Carousel extends React.Component {
               from={{
                 marginTop: "3vh",
                 marginLeft: "37vw",
-                width: "24%",
-                height: "59%",
+                width: "24vw",
+                height: "29.5vw",
                 pointerEvents: "auto",
                 zIndex: 1,
                 opacity: 0.8,
@@ -199,8 +199,8 @@ class Carousel extends React.Component {
               to={{
                 marginTop: "10vh",
                 marginLeft: "13vw",
-                width: "18%",
-                height: "45%",
+                width: "18vw",
+                height: "22.5vw",
                 pointerEvents: "none",
                 opacity: 0.8,
               }}
@@ -223,8 +223,8 @@ class Carousel extends React.Component {
               from={{
                 marginTop: "10vh",
                 marginLeft: "67vw",
-                width: "18%",
-                height: "45%",
+                width: "18vw",
+                height: "22.5vw",
                 pointerEvents: "none",
                 zIndex: -2,
                 opacity: 0.8,
@@ -232,8 +232,8 @@ class Carousel extends React.Component {
               to={{
                 marginTop: "3vh",
                 marginLeft: "37vw",
-                width: "24%",
-                height: "59%",
+                width: "24vw",
+                height: "29.5vw",
                 pointerEvents: "auto",
                 zIndex: 2,
                 opacity: 1,

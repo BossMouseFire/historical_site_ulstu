@@ -9,6 +9,7 @@ import SimbirskGuberniya from './simbirskayaGuberniya/simbirskGuberniya'
 import UlskGubernia from './ulskGubernia/ulskGubernia'
 import UlskRegion from './ulskRegion/ulskRegion'
 class History extends Component {
+  epochRef = React.createRef();
   componentDidMount() {
     document.querySelectorAll(".epoch")[0].classList.add("active");
     window.addEventListener("scroll", this.handleScroll);
@@ -35,7 +36,7 @@ class History extends Component {
   render() {
     return (
       <div>
-        <HistoryArrow />
+        <HistoryArrow/>
         <div className="historyContainer">
           <div className="titleContainer">
             Краткая история Ульяновской области
