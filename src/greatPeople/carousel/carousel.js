@@ -9,8 +9,8 @@ class Carousel extends React.Component {
           <div>
             <FlipCard
               style={{
-                marginTop: "5%",
-                marginLeft: "13%",
+                marginTop: "10vh",
+                marginLeft: "13vw",
                 width: "18%",
                 height: "45%",
                 pointerEvents: "none",
@@ -23,8 +23,8 @@ class Carousel extends React.Component {
             />
             <FlipCard
               style={{
-                marginTop: "1.5%",
-                marginLeft: "37%",
+                marginTop: "3vh",
+                marginLeft: "37vw",
                 width: "24%",
                 height: "59%",
                 pointerEvents: "auto",
@@ -38,8 +38,8 @@ class Carousel extends React.Component {
             />
             <FlipCard
               style={{
-                marginTop: "5%",
-                marginLeft: "67%",
+                marginTop: "10vh",
+                marginLeft: "67vw",
                 width: "18%",
                 height: "45%",
                 pointerEvents: "none",
@@ -55,8 +55,8 @@ class Carousel extends React.Component {
           <div>
             <Spring
               from={{
-                marginTop: "5%",
-                marginLeft: "13%",
+                marginTop: "10vh",
+                marginLeft: "13vw",
                 width: "18%",
                 height: "45%",
                 pointerEvents: "none",
@@ -64,8 +64,8 @@ class Carousel extends React.Component {
                 opacity: 0.8,
               }}
               to={{
-                marginTop: "1.5%",
-                marginLeft: "37%",
+                marginTop: "3vh",
+                marginLeft: "37vw",
                 width: "24%",
                 height: "59%",
                 pointerEvents: "auto",
@@ -89,8 +89,8 @@ class Carousel extends React.Component {
 
             <Spring
               from={{
-                marginTop: "1.5%",
-                marginLeft: "37%",
+                marginTop: "3vh",
+                marginLeft: "37vw",
                 width: "24%",
                 height: "59%",
                 pointerEvents: "auto",
@@ -98,8 +98,8 @@ class Carousel extends React.Component {
                 opacity: 0.8,
               }}
               to={{
-                marginTop: "5%",
-                marginLeft: "67%",
+                marginTop: "10vh",
+                marginLeft: "67vw",
                 width: "18%",
                 height: "45%",
                 pointerEvents: "none",
@@ -120,8 +120,8 @@ class Carousel extends React.Component {
 
             <Spring
               from={{
-                marginTop: "5%",
-                marginLeft: "67%",
+                marginTop: "10vh",
+                marginLeft: "67vw",
                 width: "18%",
                 height: "45%",
                 pointerEvents: "none",
@@ -129,8 +129,8 @@ class Carousel extends React.Component {
                 opacity: 0,
               }}
               to={{
-                marginTop: "5%",
-                marginLeft: "13%",
+                marginTop: "10vh",
+                marginLeft: "13vw",
                 width: "18%",
                 height: "45%",
                 pointerEvents: "none",
@@ -154,8 +154,8 @@ class Carousel extends React.Component {
           <div>
             <Spring
               from={{
-                marginTop: "5%",
-                marginLeft: "13%",
+                marginTop: "10vh",
+                marginLeft: "13vw",
                 width: "18%",
                 height: "45%",
                 pointerEvents: "none",
@@ -163,8 +163,8 @@ class Carousel extends React.Component {
                 opacity: 0,
               }}
               to={{
-                marginTop: "5%",
-                marginLeft: "67%",
+                marginTop: "10vh",
+                marginLeft: "67vw",
                 width: "18%",
                 height: "45%",
                 pointerEvents: "none",
@@ -188,8 +188,8 @@ class Carousel extends React.Component {
 
             <Spring
               from={{
-                marginTop: "1.5%",
-                marginLeft: "37%",
+                marginTop: "3vh",
+                marginLeft: "37vw",
                 width: "24%",
                 height: "59%",
                 pointerEvents: "auto",
@@ -197,8 +197,8 @@ class Carousel extends React.Component {
                 opacity: 0.8,
               }}
               to={{
-                marginTop: "5%",
-                marginLeft: "13%",
+                marginTop: "10vh",
+                marginLeft: "13vw",
                 width: "18%",
                 height: "45%",
                 pointerEvents: "none",
@@ -221,8 +221,8 @@ class Carousel extends React.Component {
 
             <Spring
               from={{
-                marginTop: "5%",
-                marginLeft: "67%",
+                marginTop: "10vh",
+                marginLeft: "67vw",
                 width: "18%",
                 height: "45%",
                 pointerEvents: "none",
@@ -230,8 +230,8 @@ class Carousel extends React.Component {
                 opacity: 0.8,
               }}
               to={{
-                marginTop: "1.5%",
-                marginLeft: "37%",
+                marginTop: "3vh",
+                marginLeft: "37vw",
                 width: "24%",
                 height: "59%",
                 pointerEvents: "auto",
