@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 body {
-    background: #E1F2ED;
+  background: #e1f2ed;
 }
 
-button, 
-button:active, 
+button,
+button:active,
 button:focus {
-    outline: none;
+  outline: none;
 }
