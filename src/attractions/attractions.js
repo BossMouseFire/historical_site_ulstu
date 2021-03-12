@@ -54,7 +54,7 @@ class Attractions extends Component {
       this.buttonScroll.current.style.display = "block";
       setTimeout(() => (this.buttonScroll.current.style.opacity = 1), 0);
     } else {
-      if (this.buttonScroll.current.style.opacity == 1) {
+      if (this.buttonScroll.current.style.opacity === "1") {
         this.buttonScroll.current.style.opacity = 0;
         setTimeout(
           () => (this.buttonScroll.current.style.display = "none"),
@@ -109,9 +109,9 @@ class Attractions extends Component {
             url={attraction.url}
             style={
               key === 0
-                ? { marginTop: "48%" }
+                ? { marginTop: "100vh" }
                 : key === 8
-                ? { marginBottom: "5%" }
+                ? { marginBottom: "5vw" }
                 : {}
             }
           />
