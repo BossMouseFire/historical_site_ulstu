@@ -1,10 +1,53 @@
 .chronoArrow {
   position: fixed;
-  left: 2vw;
-  top: 6vw;
-
+  left: 1.5vw;
+  top: 5vw;
+  display: flex;
+  flex-direction: row;
+  .descriptionEpoches {
+    transform: translate(-20vw, 0);
+    z-index: -5;
+    p {
+      opacity: 0;
+      font-family: Abhaya Libre ExtraBold;
+      font-size: 1.3vw;
+      color: #325e65;
+    }
+    .epochDatesActive {
+      width: 22.5vw;
+      &:nth-of-type(2) {
+        margin-top: 0.2vw;
+      }
+      &:nth-of-type(3) {
+        margin-top: 2.5vw;
+      }
+      &:nth-of-type(4) {
+        margin-top: 3.5vw;
+      }
+      &:nth-of-type(5) {
+        margin-top: 5vw;
+      }
+      p {
+        &:nth-of-type(1) {
+          opacity: 1;
+          transform: translate(21vw, 0);
+          transition: all 800ms ease;
+        }
+        &:nth-of-type(2) {
+          opacity: 1;
+          transform: translate(21vw, 0);
+          transition: all 1200ms ease;
+        }
+        &:nth-of-type(3) {
+          opacity: 1;
+          transform: translate(21vw, 0);
+          transition: all 1600ms ease;
+        }
+      }
+    }
+  }
   svg {
-    height: 37vw;
+    height: 40vw;
     .epoch {
       fill: #4f686c;
       transition: 500ms ease;
@@ -23,11 +66,11 @@
 .historyContainer {
   display: flex;
   flex-direction: column;
-  margin-left: 17%;
+  margin-left: 25%;
   font-family: Abhaya Libre ExtraBold;
   color: #325e65;
   padding-left: 4vw;
-  padding-right: 4vw;
+  padding-right: 2.5vw;
   margin-top: 2vw;
   .titleContainer {
     font-size: 3.7vw;
@@ -51,7 +94,7 @@
       flex-direction: column;
       margin-top: 1.5vw;
       img {
-        width: 36vw;
+        width: 33vw;
       }
       p {
         font-style: italic;
