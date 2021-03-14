@@ -35,23 +35,21 @@ class App extends React.Component {
         })
     );
   };
-  stateModel = () => {
+  stateModal = (state) => {
     this.setState(
       {
-        modal: !this.state.modal,
+        modal: state,
       },
       () => {
         if (this.state.modal) {
           document.body.style.overflow = "hidden";
         } else document.body.style.overflow = "";
-        const test = document.querySelector("#wrapper");
-        test.classList.toggle("modalWrapper");
       }
     );
   };
 
   changeStateProps = (section) => {
-    this.stateModel();
+    this.stateModal();
     this.changeState(section);
   };
   render() {
@@ -70,20 +68,20 @@ class App extends React.Component {
           </button>
         </nav>
         {this.state.map ? (
-          <Quiz modalState={this.state.modal}/>
+          <Quiz stateModal={this.state.modal}/>
         ) : this.state.greatPeople ? (
-          <GreatPeople modalState={this.state.modal}/>
+          <GreatPeople stateModal={this.state.modal}/>
         ) : this.state.attractions ? (
           <Attractions />
         ) : <History/>}
         <Modal
           isOpen={this.state.modal}
-          changeStateProps={this.changeStateProps}
-          stateModel={this.stateModel}
+          changePage={this.changeStateProps}
+          stateModal={this.stateModal}
         />
         <nav className="authorsInfo">
           <p>© Сайт создан студентами УлГТУ</p>
-          <p onClick={this.stateModel}>О нас</p>
+          <p onClick={() => this.stateModal(true)}>О нас</p>
         </nav>
       </div>
     );

@@ -72,7 +72,7 @@ class Carousel extends React.Component {
                 zIndex: 2,
                 opacity: 1,
               }}
-              reset={true}
+              reset={this.props.stateAnimate ? true : false}
               config={{ duration: 1000 }}
             >
               {(props) => (
@@ -105,7 +105,7 @@ class Carousel extends React.Component {
                 pointerEvents: "none",
                 opacity: 0.8,
               }}
-              reset={true}
+              reset={this.props.stateAnimate ? true : false}
               config={{ duration: 1000 }}
             >
               {(props) => (
@@ -137,7 +137,7 @@ class Carousel extends React.Component {
                 opacity: 0.8,
                 zIndex: 2,
               }}
-              reset={true}
+              reset={this.props.stateAnimate ? true : false}
               config={{ duration: 1000 }}
             >
               {(props) => (
@@ -171,7 +171,7 @@ class Carousel extends React.Component {
                 zIndex: 1,
                 opacity: 0.8,
               }}
-              reset={true}
+              reset={this.props.stateAnimate ? true : false}
               config={{ duration: 1000 }}
             >
               {(props) => (
@@ -204,7 +204,7 @@ class Carousel extends React.Component {
                 pointerEvents: "none",
                 opacity: 0.8,
               }}
-              reset={true}
+              reset={this.props.stateAnimate ? true : false}
               config={{ duration: 1000 }}
             >
               {(props) => (
@@ -238,7 +238,7 @@ class Carousel extends React.Component {
                 zIndex: 2,
                 opacity: 1,
               }}
-              reset={true}
+              reset={this.props.stateAnimate ? true : false}
               config={{ duration: 1000 }}
             >
               {(props) => (
