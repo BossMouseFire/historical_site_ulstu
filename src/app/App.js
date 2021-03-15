@@ -16,7 +16,7 @@ class App extends React.Component {
 
   componentDidMount() {
     if (!localStorage.getItem("viewModal")) {
-      this.stateModel();
+      this.stateModal(true);
       localStorage.setItem("viewModal", true);
     }
   }
@@ -96,7 +96,7 @@ class App extends React.Component {
         />
         <nav className="authorsInfo">
           <p>© Сайт создан студентами УлГТУ</p>
-          <p onClick={() => this.stateModal(true)}>О нас</p>
+          <p onClick={() => this.stateModal(true)}>О сайте</p>
         </nav>
       </div>
     );

@@ -10,6 +10,7 @@
     p {
       opacity: 0;
       font-family: Abhaya Libre ExtraBold;
+      font-weight: bold;
       font-size: 1.3vw;
       color: #325e65;
     }
@@ -22,7 +23,7 @@
         margin-top: 2.8vw;
       }
       &:nth-of-type(5) {
-        margin-top: 4.5vw;
+        margin-top: 2.5vw;
       }
       p {
         &:nth-of-type(1) {
