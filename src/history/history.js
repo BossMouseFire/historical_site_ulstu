@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "./history.scss";
 import HistoryArrow from "./arrowHistory";
-import ImenCulture from "./imenkovskayaCulture/imenCulture";
-import BulgaroPeriod from "./bulgaroPeriod/bulgaroPeriod";
 import SimbirskayaLine from "./simbirskayaLine/simbirskayaLine";
 import SimbirskProvince from "./simbirskProvince/simbirskProvince";
 import SimbirskGuberniya from "./simbirskayaGuberniya/simbirskGuberniya";
@@ -36,13 +34,11 @@ class History extends Component {
   render() {
     return (
       <div>
-        <HistoryArrow/>
+        <HistoryArrow />
         <div className="historyContainer">
           <div className="titleContainer">
             Краткая история Ульяновской области
           </div>
-          <ImenCulture />
-          <BulgaroPeriod />
           <SimbirskayaLine />
           <SimbirskProvince />
           <SimbirskGuberniya />

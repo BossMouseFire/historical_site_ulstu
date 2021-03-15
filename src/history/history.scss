@@ -1,10 +1,10 @@
 .chronoArrow {
   position: fixed;
   left: 2vw;
-  top: 6vw;
+  top: 0.5vw;
 
   svg {
-    height: 37vw;
+    height: 45vw;
     .epoch {
       fill: #4f686c;
       transition: 500ms ease;
