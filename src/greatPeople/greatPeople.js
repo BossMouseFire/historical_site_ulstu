@@ -8,8 +8,17 @@ class GreatPeople extends React.Component {
     slide: 1,
     nextSlide: 2,
     stateSlide: undefined,
+    stateAnimate: this.props.stateModal,
+    break: 0,
   };
-
+  componentDidUpdate() {
+    if (this.props.stateModal === true && this.state.break === 0) {
+      this.setState({
+        stateAnimate: false,
+        break: 1,
+      });
+    }
+  }
   changeSlide = (state) => {
     if (state === "next") {
       this.setState({
@@ -17,6 +26,8 @@ class GreatPeople extends React.Component {
         slide: this.state.slide + 1 > 19 ? 0 : this.state.slide + 1,
         nextSlide: this.state.nextSlide + 1 > 19 ? 0 : this.state.nextSlide + 1,
         stateSlide: "next",
+        stateAnimate: true,
+        break: 0,
       });
     } else {
       this.setState({
@@ -24,6 +35,8 @@ class GreatPeople extends React.Component {
         slide: this.state.slide - 1 < 0 ? 19 : this.state.slide - 1,
         nextSlide: this.state.nextSlide - 1 < 0 ? 19 : this.state.nextSlide - 1,
         stateSlide: "prev",
+        stateAnimate: true,
+        break: 0,
       });
     }
   };
@@ -56,6 +69,11 @@ class GreatPeople extends React.Component {
           name3={greatePeople["people"][this.state.nextSlide]["name"]}
           path3={greatePeople["people"][this.state.nextSlide]["imgPath"]}
           biography3={greatePeople["people"][this.state.nextSlide]["biography"]}
+          stateAnimate={
+            this.props.stateModal === true && this.state.break === 0
+              ? false
+              : this.state.stateAnimate
+          }
         />
         <div className="blockInfo">
           <div className="info">

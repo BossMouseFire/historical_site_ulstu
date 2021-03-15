@@ -1,6 +1,7 @@
+import "./simbirskProvince.scss";
 export default function SimbirskProvince() {
   return (
-    <div className="epochSelection">
+    <div className="epochSelection containerProvince">
       <div class="titleEpoch">
         Симбирская провинция и Симбирское наместничество, XVIII век
       </div>
