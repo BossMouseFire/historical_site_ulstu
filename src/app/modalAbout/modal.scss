@@ -1,5 +1,5 @@
 .modalContainer {
-  display: flex;
+  display: none;
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   opacity: 0;
-  z-index: -2;
+  z-index: 2;
   transition: all 500ms ease;
   .modalContent {
     border-radius: 0.5%;

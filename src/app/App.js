@@ -3,7 +3,7 @@ import "./App.scss";
 import Quiz from "../quiz/quiz";
 import GreatPeople from "../greatPeople/greatPeople";
 import Attractions from "../attractions/attractions";
-import History from "../history/history"
+import History from "../history/history";
 import Modal from "./modalAbout/modal";
 class App extends React.Component {
   state = {
@@ -35,25 +35,38 @@ class App extends React.Component {
         })
     );
   };
+  changeStyleModal = () => {
+    const modal = document.querySelector(".modalContainer");
+    if (this.state.modal === false) modal.style.display = "flex";
+  };
   stateModal = (state) => {
-    this.setState(
-      {
-        modal: state,
-      },
-      () => {
-        if (this.state.modal) {
-          document.body.style.overflow = "hidden";
-        } else document.body.style.overflow = "";
-      }
-    );
+    this.changeStyleModal();
+    setTimeout(() => {
+      this.setState(
+        {
+          modal: state,
+        },
+        () => {
+          setTimeout(() => {
+            if (this.state.modal) {
+              document.body.style.overflow = "hidden";
+            } else {
+              const modal = document.querySelector(".modalContainer");
+              document.body.style.overflow = "";
+              modal.style.display = "none";
+            }
+          }, 400);
+        }
+      );
+    }, 10);
   };
 
   changeStateProps = (section) => {
-    this.stateModal();
+    this.stateModal(false);
     this.changeState(section);
   };
   render() {
-    const emblem = "/images/other/emblem.svg"
+    const emblem = "/images/other/emblem.svg";
     return (
       <div>
         <nav className="navbar">
@@ -68,12 +81,14 @@ class App extends React.Component {
           </button>
         </nav>
         {this.state.map ? (
-          <Quiz stateModal={this.state.modal}/>
+          <Quiz stateModal={this.state.modal} />
         ) : this.state.greatPeople ? (
-          <GreatPeople stateModal={this.state.modal}/>
+          <GreatPeople stateModal={this.state.modal} />
         ) : this.state.attractions ? (
           <Attractions />
-        ) : <History/>}
+        ) : (
+          <History />
+        )}
         <Modal
           isOpen={this.state.modal}
           changePage={this.changeStateProps}
