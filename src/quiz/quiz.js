@@ -7,13 +7,25 @@ class Quiz extends React.Component {
   state = {
     district: undefined,
     pastDistrict: undefined,
+    stateAnimate: this.props.stateModal,
+    break: 0,
   };
 
+  componentDidUpdate() {
+    if (this.props.stateModal === true && this.state.break === 0) {
+      this.setState({
+        stateAnimate: false,
+        break: 1,
+      });
+    }
+  }
   updateDistrict = (value) => {
     if (value !== this.state.district) {
       this.setState({
         pastDistrict: this.state.district,
         district: value,
+        stateAnimate: true,
+        break: 0,
       });
     }
   };
@@ -25,7 +37,7 @@ class Quiz extends React.Component {
           <QuizWindow
             district={this.state.district}
             pastDistrict={this.state.pastDistrict}
-            modalState={this.props.modalState}
+            stateAnimate={this.props.stateModal === true && this.state.break === 0 ? false : this.state.stateAnimate}
           />
         ) : (
           <DefaultWindow />

@@ -10,7 +10,6 @@ class Map extends React.Component {
     document.body.appendChild(tooltipElem);
     // спозиционируем его сверху от аннотируемого элемента (top-center)
     let coords = target.getBoundingClientRect();
-
     let left = coords.left;
     if (left < 0) left = 0; // не заезжать за левый край окна
 
@@ -33,10 +32,7 @@ class Map extends React.Component {
   render() {
     return (
       <div className="blockMap">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 718 652"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 718 652">
           <defs>
             <radialGradient
               id="a"

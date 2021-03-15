@@ -20,8 +20,7 @@ export default function UlskRegion() {
         <div className="photo">
           <img src="/images/history/atom_reactor.jpg" />
           <p>
-            Научно-исследовательский институт атомных реакторов в советское
-            время
+            Научно-исследовательский институт атомных реакторов
           </p>
         </div>
         <div className="photo">

@@ -2,6 +2,7 @@ import React from "react";
 import "./quizWindow.scss";
 import { Spring } from "react-spring/renderprops";
 import districts from "./districtsInfo.json";
+import { animated } from "react-spring/renderprops";
 class QuizWindow extends React.Component {
   aboutDistrict = () => {
     let url = districts[this.props.district]["url"];
@@ -11,7 +12,6 @@ class QuizWindow extends React.Component {
     const district = districts[this.props.district]["district"];
     const imgDistrict = districts[this.props.district]["imgPath"];
     const text = districts[this.props.district]["districtDescription"];
-
     return (
       <div>
         {this.props.pastDistrict &&
@@ -27,11 +27,11 @@ class QuizWindow extends React.Component {
               opacity: 0,
               height: "0%",
             }}
-            reset={true}
+            reset={this.props.stateAnimate ? true : false}
             config={{ duration: 850 }}
           >
             {(props) => (
-              <div className="window" style={props}>
+              <animated.div className="window" style={props}>
                 <div className="title">
                   <p>{districts[this.props.pastDistrict]["district"]}</p>
                 </div>
@@ -52,18 +52,18 @@ class QuizWindow extends React.Component {
                 <button className="buttonBlock" onClick={this.aboutDistrict}>
                   Узнать подробнее
                 </button>
-              </div>
+              </animated.div>
             )}
           </Spring>
         ) : null}
         <Spring
           from={{ transform: "translate3d(0, -100%,0)", opacity: -1 }}
           to={{ transform: "translate3d(0, 0%,0)", opacity: 1 }}
-          reset={true}
+          reset={this.props.stateAnimate ? true : false}
           config={{ duration: 850 }}
         >
           {(props) => (
-            <div className="window" style={props}>
+            <animated.div className="window" style={props}>
               <div className="title">
                 <p>{district}</p>
               </div>
@@ -79,7 +79,7 @@ class QuizWindow extends React.Component {
               <button className="buttonBlock" onClick={this.aboutDistrict}>
                 Узнать подробнее
               </button>
-            </div>
+            </animated.div>
           )}
         </Spring>
       </div>
