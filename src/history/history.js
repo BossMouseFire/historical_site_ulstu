@@ -38,7 +38,7 @@ class History extends Component {
   }
   animateEpochDates = () => {
     const animItems = document.querySelectorAll(".epochSelection");
-    const test = document.querySelectorAll(".epochDates");
+    const epochDates = document.querySelectorAll(".epochDates");
     animItems.forEach((item, index) => {
       const animItemHeight = item.offsetHeight;
       const animItemOffset = this.getCoords(item).top;
@@ -52,12 +52,12 @@ class History extends Component {
         window.pageYOffset > animItemOffset - animItemPoint &&
         window.pageYOffset < animItemOffset + animItemHeight
       ) {
-        test.forEach((el) => {
+        epochDates.forEach((el) => {
           if (el.classList.contains("epochDatesActive")) {
             el.classList.remove("epochDatesActive");
           }
         });
-        test[index].classList.add("epochDatesActive");
+        epochDates[index].classList.add("epochDatesActive");
       }
     });
   };
