@@ -1,5 +1,6 @@
 img {
   transform: translatez(0);
+  -webkit-transform: translatez(0);
 }
 .flip-card {
   background-color: transparent;
@@ -7,11 +8,12 @@ img {
   position: absolute;
   /* This container is needed to position the front and back side */
   .flip-card-inner {
-    position: relative;
+    position: relative !important;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: 1s;
+    -webkit-transform-style: preserve-3d !important;
     transform-style: preserve-3d;
 
     /* Style the front side (fallback if image is missing) */
@@ -26,7 +28,7 @@ img {
       padding: 10px;
       img {
         width: 90%;
-        transform: translatez(0);
+
         border-radius: 10px;
       }
       p {
@@ -39,9 +41,12 @@ img {
     }
     /* Style the back side */
     .flip-card-back {
+      display: flex;
+      flex-direction: column;
       border-radius: 10px;
       background-color: #4f686c;
       color: white;
+      -webkit-transform: rotateY(180deg) !important;
       transform: rotateY(180deg);
       p {
         font-family: Abhaya Libre ExtraBold;
@@ -49,9 +54,9 @@ img {
         font-size: 1.1vw;
       }
       .buttonCard {
-        margin-top: 1vh;
         width: 80%;
         text-align: center;
+        margin: auto;
         background-color: #3d5559;
         font-size: 1.5vw;
         color: white;
@@ -72,12 +77,13 @@ img {
       position: absolute;
       width: 100%;
       height: 100%;
-      -webkit-backface-visibility: hidden; /* Safari */
+      -webkit-backface-visibility: hidden !important; /* Safari */
       backface-visibility: hidden;
     }
   }
   /* Do an horizontal flip when you move the mouse over the flip box container */
   &:hover .flip-card-inner {
+    -webkit-transform: rotateY(180deg) !important;
     transform: rotateY(180deg);
   }
 }

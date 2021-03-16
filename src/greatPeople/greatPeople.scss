@@ -37,12 +37,12 @@
   position: absolute;
   display: flex;
   flex-direction: row;
-  margin-top: 18%;
-  margin-left: 33%;
-  width: 25%;
+  margin-top: 36vh;
+  margin-left: 33vw;
+  width: 25vw;
   img {
+    max-width: 7%;
     z-index: 2;
-    width: 7%;
     &:nth-of-type(1) {
       transform: rotate(-180deg);
     }
