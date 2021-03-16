@@ -9,10 +9,14 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "autoprefixer": "^9.8.6",
+    "node-sass": "^5.0.0",
     "postcss": "^7.0.35",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-icons": "^4.2.0",
     "react-scripts": "4.0.2",
+    "react-spring": "^8.0.27",
+    "styled-components": "^5.2.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "web-vitals": "^1.0.1"
   },
@@ -39,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "resolutions": {
+    "styled-components": "^5"
   }
 }

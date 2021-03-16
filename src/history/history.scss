@@ -1,0 +1,111 @@
+.chronoArrow {
+  position: fixed;
+  left: 1.5vw;
+  top: 5vw;
+  display: flex;
+  flex-direction: row;
+  .descriptionEpoches {
+    transform: translate(-4vw, 0);
+    z-index: -5;
+    p {
+      opacity: 0;
+      font-family: Abhaya Libre ExtraBold;
+      font-weight: bold;
+      font-size: 1.3vw;
+      color: #325e65;
+    }
+    .epochDatesActive {
+      width: 21vw;
+      &:nth-of-type(3) {
+        margin-top: 2.1vw;
+      }
+      &:nth-of-type(4) {
+        margin-top: 2.8vw;
+      }
+      &:nth-of-type(5) {
+        margin-top: 2vw;
+      }
+      p {
+        &:nth-of-type(1) {
+          opacity: 1;
+          margin-bottom: 0.5vw;
+          transform: translate(5vw, 0);
+          transition: all 1000ms ease;
+        }
+        &:nth-of-type(2) {
+          opacity: 1;
+          margin-bottom: 0.5vw;
+          transform: translate(5vw, 0);
+          transition: all 1400ms ease;
+        }
+        &:nth-of-type(3) {
+          opacity: 1;
+          transform: translate(5vw, 0);
+          transition: all 1800ms ease;
+        }
+      }
+    }
+  }
+  svg {
+    height: 40vw;
+    .epoch {
+      fill: #4f686c;
+      transition: 500ms ease;
+      &:hover {
+        fill: #455b5e;
+      }
+    }
+    .active {
+      fill: #6eadad;
+      transition: 500ms ease;
+    }
+    path {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+.historyContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25vw;
+  font-family: Abhaya Libre ExtraBold;
+  color: #325e65;
+  padding-left: 4vw;
+  padding-right: 2.5vw;
+  margin-top: 2vw;
+  .titleContainer {
+    font-size: 3.7vw;
+    text-align: center;
+  }
+  .titleEpoch {
+    text-align: center;
+    font-size: 2.9vw;
+    margin-top: 1vw;
+  }
+  p {
+    font-size: 1.5vw;
+    margin-top: 1vw;
+  }
+  .photoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .photo {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1.5vw;
+      img {
+        width: 33vw;
+      }
+      p {
+        font-style: italic;
+        margin-top: 1%;
+        font-size: 1.2vw;
+        text-align: center;
+        color: #325e65;
+      }
+    }
+  }
+}
