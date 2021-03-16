@@ -51,6 +51,9 @@
     .epoch {
       fill: #4f686c;
       transition: 500ms ease;
+      &:hover {
+        fill: #455b5e;
+      }
     }
     .active {
       fill: #6eadad;
