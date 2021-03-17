@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.54" height="72.96" viewBox="0 0 25.54 72.96">
+  <defs>
+    <style>
+      .a {
+        fill: none;
+        stroke: white;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+
+      }
+    </style>
+  </defs>
+  <polyline class="a" points="1.27 0.8 23.77 36.48 1.27 72.16"/>
+  <path class="a" d="M507.08,507" transform="translate(-490.23 -449.34)"/>
+</svg>
