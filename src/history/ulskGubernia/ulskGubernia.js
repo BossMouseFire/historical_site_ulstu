@@ -2,7 +2,8 @@ export default function UlskGubernia() {
   return (
     <div className="containerUlskGubernia epochSelection">
       <div className="titleEpoch">
-        Ульяновская губерния и Ульяновский округ, XX век
+        Ульяновская губерния и Ульяновский округ, XX век (после Октябрьской
+        революции)
       </div>
       <p>
         9 мая 1924 года в память об уроженце города Владимире Ульянове (Ленине)

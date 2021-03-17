@@ -3,7 +3,7 @@ export default function UlskRegion() {
   return (
     <div className="containerUlskRegion epochSelection">
       <div className="titleEpoch">
-        Ульяновская область, XX век — наше время{" "}
+        Ульяновская область, XX век — начало XXI века
       </div>
       <p>
         19 января 1943 года из ряда районов Куйбышевской и Пензенской областей

@@ -2,7 +2,7 @@ import "./simbirskGuberniya.scss";
 export default function SimbirskGuberniya() {
   return (
     <div className="containerGubernia epochSelection">
-      <div className="titleEpoch">Симбирская губерния, XIX — XX века</div>
+      <div className="titleEpoch">Симбирская губерния, XIX — XX века (до начала Октябрьской революции)</div>
       <p>
         23 декабря 1796 года вышел Указ императора Павла I «О новом разделении
         Государства на Губернии», по которому на месте существующего
