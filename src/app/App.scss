@@ -8,10 +8,9 @@ nav {
   flex-direction: row;
   justify-content: space-around;
   button {
-    font-family: Abhaya Libre ExtraBold;
     font-size: 1.05vw;
     color: #ffffff;
-    padding: 0px 2%;
+    padding: 0 2%;
     transition: all 0.2s ease;
     &:hover {
       background: #445b5e;
@@ -33,7 +32,6 @@ nav {
   bottom: 0;
   text-align: center;
   p {
-    font-family: Abhaya Libre ExtraBold;
     font-style: normal;
     font-size: 1.05vw;
     color: rgba(255, 255, 255, 0.6);

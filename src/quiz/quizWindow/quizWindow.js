@@ -27,8 +27,8 @@ class QuizWindow extends React.Component {
               opacity: 0,
               height: "0%",
             }}
-            reset={this.props.stateAnimate ? true : false}
-            config={{ duration: 850 }}
+            reset={this.props.stateAnimate}
+            config={{ duration: 900 }}
           >
             {(props) => (
               <animated.div className="window" style={props}>
@@ -59,8 +59,8 @@ class QuizWindow extends React.Component {
         <Spring
           from={{ transform: "translate3d(0, -100%,0)", opacity: -1 }}
           to={{ transform: "translate3d(0, 0%,0)", opacity: 1 }}
-          reset={this.props.stateAnimate ? true : false}
-          config={{ duration: 850 }}
+          reset={this.props.stateAnimate}
+          config={{ duration: 900 }}
         >
           {(props) => (
             <animated.div className="window" style={props}>

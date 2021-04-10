@@ -2,10 +2,24 @@ img {
   transform: translatez(0);
   -webkit-transform: translatez(0);
 }
+.childrenCard{
+  &:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.35);
+    opacity: 1;
+  }
+}
 .flip-card {
   background-color: transparent;
   perspective: 1000px;
   position: absolute;
+
   /* This container is needed to position the front and back side */
   .flip-card-inner {
     position: relative !important;
@@ -33,7 +47,6 @@ img {
       }
       p {
         color: white;
-        font-family: Abhaya Libre ExtraBold;
         margin-top: 1vh;
         white-space: nowrap;
         transition: font-size 1s ease;
@@ -49,7 +62,6 @@ img {
       -webkit-transform: rotateY(180deg) !important;
       transform: rotateY(180deg);
       p {
-        font-family: Abhaya Libre ExtraBold;
         padding: 15px;
         font-size: 1.1vw;
       }
@@ -62,8 +74,6 @@ img {
         color: white;
         border-radius: 5px;
         transition: background-color 0.5s ease 0s;
-        font-family: Abhaya Libre ExtraBold;
-
         &:hover {
           background-color: #355257;
           transition: all 0.5s ease 0s;

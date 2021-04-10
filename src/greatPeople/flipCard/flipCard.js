@@ -7,13 +7,13 @@ class FlipCard extends React.Component {
   };
   render() {
     return (
-      <div class="flip-card" style={this.props.style}>
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
+      <div className={this.props.classChildren ? `flip-card ${this.props.classChildren}` : `flip-card`} style={this.props.style}>
+        <div className="flip-card-inner">
+          <div className="flip-card-front">
             <img src={"/images/greatPeople/" + this.props.img} alt="Avatar" />
             <p style={this.props.p_style}>{this.props.text}</p>
           </div>
-          <div class="flip-card-back">
+          <div className="flip-card-back">
             <p>{this.props.biography}</p>
             <button className="buttonCard" onClick={this.aboutHuman}>
               Узнать подробнее

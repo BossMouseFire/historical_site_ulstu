@@ -42,7 +42,7 @@ class GreatPeople extends React.Component {
   };
   render() {
     return (
-      <div style={{ display: "flex", flexDirection: "column" }}>
+      <div className={"greatPeopleBlock"}>
         <div className="blockName">
           <p>Знаменитые уроженцы Ульяновской области</p>
         </div>
@@ -58,6 +58,7 @@ class GreatPeople extends React.Component {
             onClick={() => this.changeSlide("next")}
           />
         </div>
+
         <Carousel
           slide={this.state.stateSlide}
           name1={greatePeople["people"][this.state.prevSlide]["name"]}

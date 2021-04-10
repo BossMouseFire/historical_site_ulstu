@@ -8,7 +8,7 @@ import Modal from "./modalAbout/modal";
 class App extends React.Component {
   state = {
     history: false,
-    attractions: true,
+    attractions: false,
     map: false,
     greatPeople: false,
     modal: false,
@@ -18,6 +18,16 @@ class App extends React.Component {
     if (!localStorage.getItem("viewModal")) {
       this.stateModal(true);
       localStorage.setItem("viewModal", true);
+    }
+    if(localStorage.getItem("section")) {
+      this.setState({
+        [localStorage.getItem("section")]: true
+      })
+    }
+    else{
+      this.setState({
+        attractions: true
+      })
     }
   }
 
@@ -30,9 +40,12 @@ class App extends React.Component {
         greatPeople: false,
       },
       () =>
+      {
+        localStorage.setItem("section", section);
         this.setState({
           [section]: true,
         })
+      }
     );
   };
   changeStyleModal = () => {

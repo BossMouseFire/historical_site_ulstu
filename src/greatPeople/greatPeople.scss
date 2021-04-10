@@ -1,56 +1,60 @@
-.blockName {
-  font-family: Abhaya Libre ExtraBold;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2.7vw;
-  line-height: 58px;
-  color: #133e45;
-  text-align: center;
-  margin-top: 1%;
-}
-
-.blockInfo {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  bottom: 10vh;
-  .info {
-    display: inline-block;
-    hr {
-      border: 1px solid #133e45;
-      background: #325e65;
-    }
-    p {
-      font-family: Abhaya Libre ExtraBold;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 1.4vw;
-      line-height: 29px;
-      text-align: center;
-      margin-top: 0.7%;
-      color: #133e45;
-    }
-  }
-}
-
-.arrow {
-  position: absolute;
+.greatPeopleBlock{
   display: flex;
-  flex-direction: row;
-  margin-top: 36vh;
-  margin-left: 33vw;
-  width: 25vw;
-  img {
-    max-width: 7%;
-    z-index: 2;
-    &:nth-of-type(1) {
-      transform: rotate(-180deg);
-    }
-    &:nth-of-type(2) {
-      margin-left: 114%;
-    }
-    &:hover {
-      cursor: pointer;
+  flex-direction: column;
+  .blockName {
+    font-size: 2.7vw;
+    line-height: 58px;
+    color: #133e45;
+    text-align: center;
+    margin-top: 1vw;
+    margin-left: 24vw;
+    position: absolute;
+
+  }
+
+  .blockInfo {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 10vh;
+    .info {
+      display: inline-block;
+      hr {
+        border: 1px solid #133e45;
+        background: #325e65;
+      }
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.4vw;
+        line-height: 29px;
+        text-align: center;
+        margin-top: 0.7%;
+        color: #133e45;
+      }
     }
   }
+
+  .arrow {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-top: 36vh;
+    margin-left: 33vw;
+    width: 25vw;
+    img {
+      max-width: 7%;
+      z-index: 2;
+      &:nth-of-type(1) {
+        transform: rotate(-180deg);
+      }
+      &:nth-of-type(2) {
+        margin-left: 114%;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
 }

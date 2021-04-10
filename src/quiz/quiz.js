@@ -31,7 +31,7 @@ class Quiz extends React.Component {
   };
   render() {
     return (
-      <div>
+      <div className={"blockQuiz"}>
         <Map updateDistrict={this.updateDistrict} />
         {this.state.district ? (
           <QuizWindow
