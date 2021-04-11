@@ -60,7 +60,7 @@
     width: 24%;
     z-index: 2;
     img {
-      width: 7%;
+      max-width: 7%;
       &:nth-of-type(1) {
         transform: rotate(-180deg);
       }

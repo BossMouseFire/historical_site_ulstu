@@ -13,7 +13,7 @@ class QuizWindow extends React.Component {
     const imgDistrict = districts[this.props.district]["imgPath"];
     const text = districts[this.props.district]["districtDescription"];
     return (
-      <div>
+      <>
         {this.props.pastDistrict &&
         this.props.pastDistrict !== this.props.district ? (
           <Spring
@@ -82,7 +82,7 @@ class QuizWindow extends React.Component {
             </animated.div>
           )}
         </Spring>
-      </div>
+      </>
     );
   }
 }
