@@ -2,7 +2,6 @@ import React from "react";
 import Map from "../quiz/map/map";
 import QuizWindow from "./quizWindow/quizWindow";
 import DefaultWindow from "./quizWindow/defaultWindow";
-import "./quiz.scss";
 class Quiz extends React.Component {
   state = {
     district: undefined,

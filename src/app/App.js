@@ -5,6 +5,7 @@ import GreatPeople from "../greatPeople/greatPeople";
 import Attractions from "../attractions/attractions";
 import History from "../history/history";
 import Modal from "./modalAbout/modal";
+import MobileVersion from "../mobileVersion/mobileVersion";
 class App extends React.Component {
   state = {
     history: false,
@@ -12,9 +13,11 @@ class App extends React.Component {
     map: false,
     greatPeople: false,
     modal: false,
+    mobileVersion: false
   };
 
   componentDidMount() {
+    this.checkMobileVersion();
     if (!localStorage.getItem("viewModal")) {
       this.stateModal(true);
       localStorage.setItem("viewModal", true);
@@ -27,6 +30,23 @@ class App extends React.Component {
     else{
       this.setState({
         attractions: true
+      })
+    }
+    window.addEventListener("resize", this.checkMobileVersion);
+  }
+
+  componentWillUnmount() {
+   window.removeEventListener("resize", this.checkMobileVersion);
+  }
+  checkMobileVersion = () => {
+    if(window.screen.width <= 768){
+      this.setState({
+        mobileVersion: true
+      })
+    }
+    else{
+      this.setState({
+        mobileVersion: false
       })
     }
   }
@@ -81,37 +101,42 @@ class App extends React.Component {
   render() {
     const emblem = "/images/other/emblem.svg";
     return (
-      <div>
-        <nav className="navbar">
-          <img className="emblem" src={emblem} alt="герб Ульяновской области" />
-          <button onClick={() => this.changeState("history")}>ИСТОРИЯ</button>
-          <button onClick={() => this.changeState("attractions")}>
-            ДОСТОПРИМЕЧАТЕЛЬНОСТИ
-          </button>
-          <button onClick={() => this.changeState("map")}>ХРОНОКАРТА</button>
-          <button onClick={() => this.changeState("greatPeople")}>
-            ВЫДАЮЩИЕСЯ ЗЕМЛЯКИ
-          </button>
-        </nav>
-        {this.state.map ? (
-          <Quiz stateModal={this.state.modal} />
-        ) : this.state.greatPeople ? (
-          <GreatPeople stateModal={this.state.modal} />
-        ) : this.state.attractions ? (
-          <Attractions />
-        ) : (
-          <History />
-        )}
-        <Modal
-          isOpen={this.state.modal}
-          changePage={this.changeStateProps}
-          stateModal={this.stateModal}
-        />
-        <nav className="authorsInfo">
-          <p>© Сайт создан студентами УлГТУ</p>
-          <p onClick={() => this.stateModal(true)}>О сайте</p>
-        </nav>
-      </div>
+        <>
+          {this.state.mobileVersion ? <MobileVersion/> :
+              <div>
+                <nav className="navbar">
+                  <img className="emblem" src={emblem} alt="герб Ульяновской области" />
+                  <button onClick={() => this.changeState("history")}>ИСТОРИЯ</button>
+                  <button onClick={() => this.changeState("attractions")}>
+                    ДОСТОПРИМЕЧАТЕЛЬНОСТИ
+                  </button>
+                  <button onClick={() => this.changeState("map")}>ХРОНОКАРТА</button>
+                  <button onClick={() => this.changeState("greatPeople")}>
+                    ВЫДАЮЩИЕСЯ ЗЕМЛЯКИ
+                  </button>
+                </nav>
+                {this.state.map ? (
+                    <Quiz stateModal={this.state.modal} />
+                ) : this.state.greatPeople ? (
+                    <GreatPeople stateModal={this.state.modal} />
+                ) : this.state.attractions ? (
+                    <Attractions />
+                ) : (
+                    <History />
+                )}
+                <Modal
+                    isOpen={this.state.modal}
+                    changePage={this.changeStateProps}
+                    stateModal={this.stateModal}
+                />
+                <nav className="authorsInfo">
+                  <p>© Сайт создан студентами УлГТУ</p>
+                  <p onClick={() => this.stateModal(true)}>О сайте</p>
+                </nav>
+              </div>}
+        </>
+
+
     );
   }
 }

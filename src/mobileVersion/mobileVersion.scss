@@ -1,0 +1,24 @@
+.mobileVersionBlock{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  div{
+    img{
+      width: 50vw;
+      @media screen and (max-width: 480px) {
+        width: 60vw;
+      }
+    }
+    p{
+      text-align: center;
+      font-size: 7vw;
+      color: #164a52;
+      @media screen and (max-width: 480px) {
+        font-size: 7.5vw;
+      }
+    }
+  }
+}
