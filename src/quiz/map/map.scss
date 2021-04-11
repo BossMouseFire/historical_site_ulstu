@@ -68,7 +68,7 @@
   fill: #f5f5f5;
 }
 
-.district_ulst path {
+.district_ulstu path {
   fill-opacity: 1;
   fill-rule: nonzero;
   stroke: #646464;
@@ -80,23 +80,28 @@
   transition: all, 0s, ease, 0.2s;
 }
 
-.district_ulst path:hover {
+.district_ulstu path:hover {
   fill: #e0e0ab;
   cursor: pointer;
   transition: all, 0s, ease, 0.2s;
 }
 
 .blockMap {
-  width: 50vw;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
   background: linear-gradient(
-    270deg,
-    rgba(53, 103, 111, 0.34) 0%,
-    rgba(227, 238, 240, 0) 13.7%
+                  270deg,
+                  rgba(53, 103, 111, 0.34) 0%,
+                  rgba(227, 238, 240, 0) 13.7%
   );
   svg {
     width: 87%;
-    margin-left: 2vw;
-    margin-top: 1vw;
+    margin-top: 10vh;
+    margin-left: 2%;
   }
 }
 .tooltip {
